@@ -1,0 +1,114 @@
+/* Dropdown Menu Mobile */
+
+.dropdown-menu {
+  position: relative;
+  margin: 1em auto 1.25em;
+
+  &__select {
+    display: flex;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #FF8B9E;
+    border-radius: 2em;
+
+    &__text {
+      font-size: 1rem;
+      font-weight: 700;
+      color: whitesmoke;
+    }
+  }
+
+  &__options {
+    display: none;
+    position: absolute;
+    width: 92%;
+    padding: 0.85em;
+    margin-top: 0.75em;
+    border-radius: 1.5em;
+    background: white;
+    animation-name: fadeInDown;
+    animation-duration: 0.35s;
+    animation-fill-mode: both;
+
+    &__item {
+      margin: 0.5em 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &__button {
+        padding: 1em 1.5em;
+        background: #FF8B9E;
+        color: whitesmoke;
+        font-weight: 700;
+        text-align: left;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 1.25em;
+      }
+
+      &__button:hover {
+        background-color: #e06072;
+      }
+    }
+  }
+}
+
+.dropdown-menu.active .dropdown-menu__options {
+  display: block;
+  opacity: 0;
+  z-index: 2;
+  animation-name: fadeInUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+}
+
+/* Dropdown Menu Desktop */
+@media screen and (min-width: 1250px) {
+  .dropdown-menu {
+    margin: 2.5em auto 1.25em;
+    max-width: 475px;
+
+    &__select {
+      display: flex;
+      justify-content: center;
+
+      &__text {
+        font-size: 1.125rem;
+      }
+    }
+
+    &__options {
+      padding: 1em;
+      margin-top: 0.85em;
+
+      &__item {
+        display: inline-flex;
+        margin: 0.5em 0.35em;
+      }
+    }
+  }
+}
