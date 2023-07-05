@@ -22,8 +22,9 @@ mix.sass('wp-content/themes/clinicoeurs/ressources/sass/services/main.scss', 'wp
 mix.sass('wp-content/themes/clinicoeurs/ressources/sass/volunteers/main.scss', 'wp-content/themes/clinicoeurs/public/css/volunteers.css');
 mix.sass('wp-content/themes/clinicoeurs/ressources/sass/contact/main.scss', 'wp-content/themes/clinicoeurs/public/css/contact.css');
 mix.sass('wp-content/themes/clinicoeurs/ressources/sass/donations/main.scss', 'wp-content/themes/clinicoeurs/public/css/donations.css');
-mix.sass('wp-content/themes/clinicoeurs/ressources/sass/actualities/main.scss', 'wp-content/themes/clinicoeurs/public/css/actualities.css');
-mix.sass('wp-content/themes/clinicoeurs/ressources/sass/confidentiality/main.scss', 'wp-content/themes/clinicoeurs/public/css/confidentiality.css');
+mix.sass('wp-content/themes/clinicoeurs/ressources/sass/news/main.scss', 'wp-content/themes/clinicoeurs/public/css/news.css');
+mix.sass('wp-content/themes/clinicoeurs/ressources/sass/legal-notice/main.scss', 'wp-content/themes/clinicoeurs/public/css/legal-notice.css');
+
 /* JS part */
 mix.js('wp-content/themes/clinicoeurs/ressources/js/site.js', 'wp-content/themes/clinicoeurs/public/js');
 mix.js('wp-content/themes/clinicoeurs/ressources/js/form.js', 'wp-content/themes/clinicoeurs/public/js/form.js');
