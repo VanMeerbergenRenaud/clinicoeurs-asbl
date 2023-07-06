@@ -7,6 +7,10 @@
   margin: 0 0 1rem;
   z-index: 999;
   font-weight: 700;
+
+  a {
+    border-bottom: 1px solid black;
+  }
 }
 
 .js-enabled .no-js__message {

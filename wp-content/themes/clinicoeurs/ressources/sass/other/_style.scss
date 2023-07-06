@@ -33,8 +33,9 @@ body::before {
 }
 
 section {
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
+  padding: 1em 2em;
 }
 
 /* Titles & Paragraphes : Mobile */
@@ -43,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  margin: 1em 0 2em;
   font-size: 2em; /* 32px */
   font-weight: 600;
   line-height: 1.5;
@@ -102,23 +104,29 @@ a, abbr {
 
 .cta {
   margin: 0 auto;
+  display: block;
+  width: fit-content;
   font-family: 'Fredoka', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   color: white;
-  padding: 0.75rem 1.25rem;
+  padding: 0.825rem 1.5rem;
   background-color: black;
+  border-radius: 3em;
 
   svg {
     margin-left: 1rem;
     width: 0.33rem;
     height: 0.575rem;
+    fill: white;
   }
 }
-.cta:after {
+
+.cta::after {
   content: url(../../img/svg/arrow-right.svg);
   display: inline-block;
-  height: 18px;
-  width: 10px;
+  height: 1rem;
+  width: 0.75rem;
 }
 
 .cta:hover {
