@@ -35,7 +35,7 @@ body::before {
 section {
   position: relative;
   margin: 0 auto;
-  padding: 1em 2em;
+  padding: 2.35em 2em;
 }
 
 /* Titles & Paragraphes : Mobile */
@@ -47,13 +47,14 @@ h1 {
   margin: 1em 0 2em;
   font-size: 2em; /* 32px */
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 h2 {
   font-size: 1.25em; /* 20px */
   font-weight: 500;
   line-height: 1.4;
+  margin: 1rem 0 1.5rem;
 }
 
 h3 {
@@ -70,8 +71,10 @@ p {
 }
 
 span {
+  font-family: "Comic Sans", "Comic Sans MS", sans-serif;
   font-size: 0.75rem; /* 12px */
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 /* Img & Overlay */

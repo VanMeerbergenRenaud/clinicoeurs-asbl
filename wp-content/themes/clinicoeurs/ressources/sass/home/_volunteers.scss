@@ -1,0 +1,29 @@
+/* Volunteers */
+
+@import "../other/variables";
+
+.volunteers {
+  span {
+    color: $red;
+  }
+
+  .slider {
+    max-width: 500px;
+    margin: 2em auto 1.5em;
+    border-radius: 1em;
+    max-height: 200px;
+  }
+
+  .list {
+    padding: 1em;
+    list-style-type: -moz-gujarati;
+
+    &__item {
+      margin-bottom: 1.5em;
+
+      &__text {
+
+      }
+    }
+  }
+}

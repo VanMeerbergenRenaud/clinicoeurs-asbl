@@ -1,0 +1,39 @@
+/* About */
+
+.about {
+  text-align: center;
+
+  &__title {
+    margin-bottom: -1em;
+  }
+
+  &__card {
+    margin-top: 3em;
+    background-color: #F7F7F7;
+    border-radius: 1em;
+    text-align: left;
+
+    img {
+      border-radius: 1em 1em 0 0;
+      max-height: 250px;
+    }
+
+    h3, p {
+      padding: 0 1.5rem;
+    }
+
+    h3 {
+      margin-top: 1.25em;
+      text-transform: uppercase;
+      font-family: "Comic Sans", "Comic Sans MS", sans-serif;
+    }
+
+    p {
+      margin: 1.25em 0 2em;
+    }
+
+    .cta {
+      margin: 0;
+    }
+  }
+}
