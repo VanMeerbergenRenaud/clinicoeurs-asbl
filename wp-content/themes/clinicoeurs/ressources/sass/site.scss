@@ -1,6 +1,7 @@
-/* Renaud Vmb */
+/* Clinicoeurs Vielsam ASBL Stylesheet */
 
-@import 'other/fonts';
+/* Utils */
+/*@import 'other/fonts';*/
 @import 'other/reset';
 @import 'other/utils';
 @import 'other/variables';
@@ -13,14 +14,14 @@
 @import 'other/header';
 
 /* Main section */
-/*@import 'home/hero';
+@import 'home/hero';
 @import 'home/about';
 @import 'home/volunteers';
 @import 'home/news';
 @import 'home/sponsors';
 @import 'home/testimonials';
-@import 'home/faq';*/
-@import 'other/contact';
+@import 'home/faq';
+@import 'other/contact-form';
 
 /* Footer section */
 @import 'other/footer';

@@ -8,15 +8,28 @@
 }
 
 body {
-  font-family: 'Fredoka', 'Comic Sans', 'Comic Sans MS', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Comic Sans', 'Comic Sans MS', 'Fredoka', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   margin: 0 auto;
   padding: 0;
-  max-width: 1600px;
+  color: black;
+  max-width: 2000px;
   overflow-x: hidden;
   background-color: white;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../../img/background/mobile.jpg") no-repeat;
 }
 
 section {
@@ -25,39 +38,38 @@ section {
 }
 
 /* Titles & Paragraphes : Mobile */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka', sans-serif;
+}
+
 h1 {
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 2em; /* 32px */
+  font-weight: 600;
   line-height: 1.5;
-  color: #1B3839;
 }
 
 h2 {
-  font-size: 1.35em;
-  font-weight: 700;
+  font-size: 1.25em; /* 20px */
+  font-weight: 500;
   line-height: 1.4;
-  color: gray;
 }
 
 h3 {
-  font-size: 1.125em;
-  font-weight: 700;
-  line-height: 1.444;
-  color: gray;
-}
-
-h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  color: #EAEAEA;
+  font-size: 0.875em; /* 14px */
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 p {
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.42;
-  color: black;
+  font-family: 'Comic Sans', 'Comic Sans MS', sans-serif;
+  font-size: 0.875rem; /* 12px */
+  font-weight: 400;
+  line-height: 1.58;
+}
+
+span {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
 }
 
 /* Img & Overlay */
@@ -85,17 +97,32 @@ img {
 a, abbr {
   text-decoration: none;
   border: none;
+  color: black;
 }
 
 .cta {
+  margin: 0 auto;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  background-color: black;
 
-  img {
-
+  svg {
+    margin-left: 1rem;
+    width: 0.33rem;
+    height: 0.575rem;
   }
+}
+.cta:after {
+  content: url(../../img/svg/arrow-right.svg);
+  display: inline-block;
+  height: 18px;
+  width: 10px;
 }
 
 .cta:hover {
-
+  background-color: orange;
 }
 
 /* Utils */
@@ -111,6 +138,10 @@ a, abbr {
       Media queries
 ------------------------ */
 @media screen and (min-width: 1250px) {
+  body::before {
+    background: url("../../img/background/desktop.jpg") no-repeat;
+  }
+
   .none {
     display: block;
   }
@@ -121,35 +152,32 @@ a, abbr {
 
   /* Titles & Paragraphes : Desktop */
   h1 {
-    font-size: 4em;
-    line-height: 1.1;
+    font-size: 3.25em; /* 52px */
+    line-height: 1.08;
   }
 
   h2 {
-    font-size: 2.5em;
-    line-height: 1.05;
+    font-size: 2em; /* 32px */
+    line-height: 1.25;
   }
 
   h3 {
-    font-size: 1.75em;
-    line-height: 1.44;
-  }
-
-  h4 {
-    font-size: 1.25rem;
-    line-height: 1;
+    font-size: 1.25em; /* 20px */
+    line-height: 1.4;
   }
 
   p {
-    font-size: 1.125rem;
-    line-height: 1.33;
+    font-size: 0.875rem; /* 12px */
+    line-height: 1.58;
   }
 
   .cta {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
 
-
-    img {
-
+    svg {
+      width: 0.4rem;
+      height: 0.75rem;
     }
   }
 }

@@ -1,4 +1,4 @@
-    <footer> <!-- Same as before-->
+    <footer role="contentinfo">
         <section class="f-first">
             <h2><?= get_field('f-first-title'); ?></h2>
             <nav>

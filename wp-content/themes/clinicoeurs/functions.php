@@ -184,3 +184,11 @@ function add_srcset_to_images($content)
 
 add_filter('the_content', 'add_srcset_to_images');
 add_filter('widget_text_content', 'add_srcset_to_images');
+
+function dd($var)
+{
+    echo '<pre>';
+    var_dump($var);
+    echo '</pre>';
+    die();
+}

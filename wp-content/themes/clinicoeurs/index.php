@@ -2,14 +2,14 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
         <!-- Structure home page -->
-        <?php get_template_part('main/hero'); ?>
-        <?php get_template_part('main/about'); ?>
-        <?php get_template_part('main/volunteers'); ?>
-        <?php get_template_part('main/news'); ?>
-        <?php get_template_part('main/sponsors'); ?>
-        <?php get_template_part('main/testimonials'); ?>
-        <?php get_template_part('main/faq'); ?>
-        <?php get_template_part('main/contact'); ?>
+        <?php get_template_part('home/hero'); ?>
+        <?php get_template_part('home/about'); ?>
+        <?php get_template_part('home/volunteers'); ?>
+        <?php get_template_part('home/news'); ?>
+        <?php get_template_part('home/sponsors'); ?>
+        <?php get_template_part('home/testimonials'); ?>
+        <?php get_template_part('home/faq'); ?>
+        <?php get_template_part('ome/contact'); ?>
     </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

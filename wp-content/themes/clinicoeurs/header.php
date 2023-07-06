@@ -51,6 +51,7 @@
         Voici les <a href="https://www.enable-javascript.com/fr/" title="vers le site enable-javascript">
         instructions pour activer JavaScript dans votre navigateur Web</a>.
     </p>
-    <header>
-        <?php get_template_part('navigation'); ?>
+    <header role="banner">
+        <h1 class="hidden"><?= get_bloginfo('name'); ?></h1>
+        <?php get_template_part('home/navigation'); ?>
     </header>
