@@ -1,0 +1,21 @@
+/* News */
+
+@import "../other/variables";
+
+.news {
+  padding-top: 0;
+
+  &__span {
+    color: $orange;
+  }
+
+  &__img {
+    margin: 2em 0;
+    min-height: 250px;
+    border-radius: 1.5em;
+  }
+
+  .cta {
+    background-color: $orange;
+  }
+}

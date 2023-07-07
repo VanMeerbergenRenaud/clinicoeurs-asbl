@@ -171,6 +171,15 @@
         }
       }
 
+      &:hover {
+        .link {
+          color: #cccccc;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
       .item:last-child .link {
         margin-left: 1em;
         padding: 0.75rem 1.25rem;
