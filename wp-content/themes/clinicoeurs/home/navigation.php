@@ -12,7 +12,7 @@
         <ul class="list">
             <?php if (have_rows('navigation-links')) : while (have_rows('navigation-links')) : the_row(); ?>
                 <li class="item">
-                    <a href="<?php the_sub_field('link-url'); ?>" class="link">
+                    <a href="<?php the_sub_field('link-url'); ?>" class="link" tabindex="0">
                         <?php the_sub_field('link-text'); ?>
                     </a>
                 </li>
