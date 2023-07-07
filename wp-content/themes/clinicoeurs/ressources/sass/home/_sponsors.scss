@@ -1,0 +1,25 @@
+/* Sponsors */
+
+@import "../other/variables";
+
+.sponsor {
+
+  &__span {
+    color: $pink;
+  }
+
+  &__gallery {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em 1.65em;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+
+  .cta {
+    background-color: $pink;
+  }
+}
