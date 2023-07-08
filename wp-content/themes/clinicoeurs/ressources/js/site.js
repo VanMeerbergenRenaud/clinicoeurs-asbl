@@ -2,6 +2,7 @@
 document.documentElement.classList.add("js-enabled");
 const body = document.querySelector('body');
 
+/* Testimonial slider */
 const next = document.querySelector(".next");
 const prev = document.querySelector(".previous");
 const slides = document.querySelectorAll(".slide");
