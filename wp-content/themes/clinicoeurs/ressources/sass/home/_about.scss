@@ -1,5 +1,7 @@
 /* About */
 
+@import "../other/variables";
+
 .about {
   text-align: center;
 
@@ -34,6 +36,7 @@
 
     .cta {
       margin: 0;
+      background-color: $red;
     }
   }
 }

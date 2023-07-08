@@ -10,11 +10,13 @@
 
   &__gallery {
     margin: 2em 0;
+    padding: 0 0.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em 1.65em;
 
     img {
+      /*max-width: 150px;*/
       border-radius: 1rem;
     }
   }

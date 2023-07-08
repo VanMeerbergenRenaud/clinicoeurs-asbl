@@ -1,5 +1,7 @@
 /* Hero */
 
+@import "../other/variables";
+
 .hero {
   padding: 0 2em 2.35em;
 
@@ -9,5 +11,9 @@
 
   img {
     margin: 3.125rem 0;
+  }
+
+  .cta {
+    background-color: $yellow;
   }
 }
