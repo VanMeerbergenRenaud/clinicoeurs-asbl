@@ -23,5 +23,8 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-    <a href="#" class="cta">Devenir bénévole</a>
+    <a href="#" class="cta">
+        Devenir bénévole
+        <span></span>
+    </a>
 </section>

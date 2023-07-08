@@ -19,5 +19,8 @@
         ?>
     </div>
 
-    <a href="#" class="cta">Voir tous les partenaires</a>
+    <a href="#" class="cta">
+        Voir tous les partenaires
+        <span></span>
+    </a>
 </section>

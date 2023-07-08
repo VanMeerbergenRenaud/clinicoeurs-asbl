@@ -107,34 +107,56 @@ a, abbr {
 
 /* Cta block */
 .cta {
+  position: relative;
   margin: 0 auto;
-  display: block;
+  padding: 0.875rem 3.5rem 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
   color: white;
-  padding: 0.825rem 1.5rem;
   background-color: black;
   border-radius: 3em;
 
-  svg {
-    margin-left: 1rem;
-    width: 0.33rem;
-    height: 0.575rem;
-    fill: white;
+  span {
+    position: absolute;
+    top: 52.5%;
+    right: 2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 2px solid white;
+    border-radius: 0.1rem;
+    transition: .4s;
+    //position
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 1.15rem;
+    height: 2px;
+    border-radius: 1em;
+    background-color: white;
+    transform-origin: right;
+    transform: rotate(45deg) translate(0.1rem, 0.95rem) scaleX(0);
+    transition: .3s;
   }
 }
 
-.cta::after {
-  content: url(../../img/svg/arrow-right.svg);
-  display: inline-block;
-  height: 1rem;
-  width: 0.75rem;
+
+.cta:hover span::before {
+  transform: rotate(45deg) translate(0.1rem, 0.95rem) scaleX(1);
 }
 
 .cta:hover {
   opacity: .9;
+
+  span {
+    right: 1rem;
+  }
 }
 
 /* Cta border animation */
