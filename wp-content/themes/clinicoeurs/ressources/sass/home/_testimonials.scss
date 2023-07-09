@@ -95,7 +95,7 @@
 
 @media screen and (min-width: 1250px) {
   .testimonial {
-    padding: 5.5rem 12rem 4rem;
+    padding: 7.5rem 12rem;
     display: grid;
     grid-template-columns: 1fr 400px;
     gap: 0 8rem;
@@ -109,7 +109,7 @@
       grid-column: 1/2;
       position: relative;
       margin: 0 0 4rem;
-      padding: 1.25em 1.75em 1.75em 1.25em;
+      padding: 1.25em 2rem 1.75em 1.25em;
       border-radius: 1.25em;
 
       .slide {
@@ -124,6 +124,7 @@
         }
 
         p {
+          margin-top: 1rem;
           grid-row: 2/3;
           grid-column: 1/2;
           display: flex;

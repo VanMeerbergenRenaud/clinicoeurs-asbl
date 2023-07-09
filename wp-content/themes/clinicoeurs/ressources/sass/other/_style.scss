@@ -179,6 +179,10 @@ a, abbr {
   transform: scaleX(1);
 }
 
+input, textarea {
+  font-family: "Comic Sans", "Comic Sans MS", sans-serif;
+}
+
 /* Utils */
 .none {
   display: none;
@@ -242,5 +246,11 @@ a, abbr {
 
   h1, h2, h3, p, span, .cta {
     max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  body {
+   padding: 0 7.5rem;
   }
 }
