@@ -262,7 +262,16 @@
       }
 
       .facebook {
+        background-color: transparent;
         margin: 5.5% 0 0 17.5%;
+      }
+
+      .facebook::before {
+        content: "nous suivre";
+        font-size: 0.875rem;
+        position: relative;
+        top: -2em;
+        margin-bottom: -1em;
       }
     }
 

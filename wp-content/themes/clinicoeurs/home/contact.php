@@ -9,7 +9,7 @@
         ?>
 
         <?php if ($feedback): ?>
-            <div class="success">
+            <div class="success">x
                 <p><?= get_field('success-message'); ?></p>
             </div>
         <?php else: ?>

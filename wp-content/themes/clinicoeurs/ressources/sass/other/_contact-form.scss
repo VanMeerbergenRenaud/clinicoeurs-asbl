@@ -43,7 +43,7 @@
     border-radius: 2.5rem;
     padding: 2.5em 1.25em 1.5em;
     background-color: white;
-    border: 1px solid #f5f5f5;
+    /*border: 1px solid #f5f5f5;*/
   }
 
   &__span {
@@ -51,7 +51,6 @@
   }
 
   &__title {
-    font-size: 1.5rem;
     font-weight: 500;
   }
 
@@ -169,7 +168,7 @@
 
 @media screen and (min-width: 1250px) {
   .contact {
-    padding: 5em 10.5em;
+    padding: 4rem 16rem;
 
     .error {
       margin: -2em auto 2em;
@@ -183,23 +182,16 @@
 
     &__container {
       border-radius: 2em;
-      padding: 3.35rem 5.5rem;
-      border: 1px solid #f1f1f1;
-    }
-
-    &__span {
-      font-size: 0.875rem;
+      padding: 3.35rem 5rem;
     }
 
     &__title {
-      margin: 0.75rem auto 0;
-      font-size: 2rem;
+      margin: 1.5rem auto 0;
     }
 
     &__text {
-      margin: 2rem auto 3.5rem;
-      max-width: 465px;
-      font-size: 1rem;
+      margin: 1.5rem auto 2.5rem;
+      max-width: 450px;
     }
 
     &__form {
@@ -218,12 +210,12 @@
       }
 
       label {
-        font-size: 1.15rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
       }
 
       input, textarea {
-        font-size: 1.25rem;
+        font-size: 1rem;
       }
 
       .contact__info-2 {
@@ -235,21 +227,21 @@
           margin: 1em 0 2.5em;
 
           h3 {
-            font-size: 1.15rem;
-            margin-bottom: 2rem;
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
             grid-column: 1/5;
           }
 
           div {
             label {
-              font-size: 1.15rem;
+              font-size: 0.875rem;
             }
           }
         }
       }
 
       textarea {
-        font-size: 1.15rem;
+        font-size: 0.94rem;
       }
 
       button[type="submit"] {
