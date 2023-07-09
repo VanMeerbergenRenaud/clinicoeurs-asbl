@@ -5,6 +5,10 @@
 .about {
   text-align: center;
 
+  &__span {
+    color: $yellow;
+  }
+
   &__title {
     margin-bottom: -1em;
   }
@@ -26,6 +30,7 @@
 
     h3 {
       margin-top: 1.25em;
+      color: $red;
       text-transform: uppercase;
       font-family: "Comic Sans", "Comic Sans MS", sans-serif;
     }
@@ -37,6 +42,47 @@
     .cta {
       margin: 0;
       background-color: $red;
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .about {
+    margin-top: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 2.625em;
+
+    &__span {
+      margin: 0 auto;
+      grid-column: 1/5;
+    }
+
+    &__title {
+      margin: 1.5rem auto 4rem;
+      grid-column: 1/5;
+    }
+
+    &__card {
+      margin: 0;
+      height: fit-content;
+
+      img {
+        border-radius: 1rem 1rem 0.5rem 0.5rem;
+        min-height: 275px;
+      }
+
+      h3 {
+        font-size: 0.875rem;
+      }
+
+      p {
+        margin: 1.4em 0 2em;
+      }
+
+      .cta {
+        font-size: 0.875rem;
+      }
     }
   }
 }

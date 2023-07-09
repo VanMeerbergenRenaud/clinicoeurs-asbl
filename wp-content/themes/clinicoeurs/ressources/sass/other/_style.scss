@@ -204,6 +204,10 @@ a, abbr {
     display: none;
   }
 
+  section {
+    padding: 4em 7.8125em;
+  }
+
   /* Titles & Paragraphes : Desktop */
   h1 {
     font-size: 3.25em; /* 52px */
@@ -225,8 +229,17 @@ a, abbr {
     line-height: 1.58;
   }
 
+  span {
+    font-size: 1rem;
+  }
+
   .cta {
     font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 3.75rem 1.15rem 1.5rem;
+  }
 
+  h1, h2, h3, p, span, .cta {
+    max-width: 500px;
   }
 }

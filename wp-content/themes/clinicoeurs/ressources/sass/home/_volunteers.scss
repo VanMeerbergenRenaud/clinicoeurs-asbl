@@ -67,3 +67,50 @@
     }
   }
 }
+
+@media screen and (min-width: 1250px) {
+  .volunteers {
+    padding: 5.5rem 12rem;
+    display: grid;
+    grid-template-columns: 1fr 34.375rem;
+    justify-content: center;
+    align-items: center;
+
+    span, h2, p {
+      max-width: 333px;
+    }
+
+    .slider-wrapper {
+      margin: 0 auto;
+      grid-column: 2/3;
+      grid-row: 1/4;
+
+      .slider {
+        max-height: 325px;
+
+        img {
+          flex: 1 0 100%;
+          scroll-snap-align: start;
+          border-radius: 2em;
+        }
+      }
+    }
+
+    .list {
+      margin-top: 2.5rem;
+      padding: 1em;
+      grid-row: 4/5;
+      grid-column: 1/3;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0 3rem;
+
+      &__item {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 275px;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <!-- About section -->
 <section class="about" aria-label="Section des services">
-    <span>Nos services</span>
+    <span class="about__span">Nos services</span>
     <h2 class="about__title">Présentation des différents services de l’ASBL</h2>
     <?php
     if (have_rows('home-about')) {

@@ -21,3 +21,33 @@
     background-color: $yellow;
   }
 }
+
+@media screen and (min-width: 1250px) {
+  .hero {
+    margin-top: 2em;
+    padding: 4em 7.8125em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5em;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    h1 {
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    img {
+      grid-column: 2/3;
+      grid-row: -1/5;
+      width: 400px;
+      margin: 0 auto;
+      scale: 1.15;
+    }
+
+    .cta {
+      margin: 2em 0 0;
+      background-color: $yellow;
+    }
+  }
+}
