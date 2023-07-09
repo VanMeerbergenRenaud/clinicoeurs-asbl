@@ -1,5 +1,8 @@
-## Clinicoeurs ASBL Vielsam
+# Clinicoeurs ASBL Vielsam
 Le site Clinicoeurs est un site de clowns créé dans le cadre d'un travail pour les études à l'HEPL en fin de 2è année.
+
+## Maquette de conception & moodboard du site
+Lien : https://xd.adobe.com/view/40050289-ad18-4b26-a971-b73c685e1ed4-1556/?fullscreen
 
 ### Fonctionnalités principales
 - Faire un don : les visiteurs peuvent faire un don à l'ASBL Clinicoeurs directement sur le site.
