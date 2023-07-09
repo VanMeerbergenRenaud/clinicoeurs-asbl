@@ -1,5 +1,295 @@
 /* Footer */
 
-.footer {
+@import "variables";
 
+.footer {
+  position: relative;
+  padding: 3.125em 1.75em 0;
+  overflow: hidden;
+
+  nav {
+
+    ul {
+      display: grid;
+      padding: 1.5em 0 1em;
+
+      li {
+        font-size: 1em;
+        margin-bottom: 0.75em;
+
+        a, span {
+          display: block;
+          padding: 0.5em 0;
+          font-size: 0.875rem;
+          color: #2F2F2F;
+        }
+      }
+    }
+
+    .navigation {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contributions {
+      grid-template-columns: 1fr;
+    }
+
+    .horaire {
+      grid-template-columns: 1fr;
+      width: 75%;
+
+      li {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 3rem;
+        align-items: center;
+        font-size: 0.875rem;
+
+        a {
+          border-bottom: 1px solid #2F2F2F;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em 1.5em;
+    align-items: center;
+
+    .donor {
+      grid-column: 1/4;
+      background-color: white;
+
+      span {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      &__info {
+        padding: 1rem 1.375rem;
+        font-size: 0.75rem;
+        border: 1px solid #F5F5F5;
+        border-radius: 0.875em;
+
+        p {
+          span {
+            display: inline-block;
+            text-align: left;
+            margin: 0.5rem 0 0;
+            font-size: 0.875rem;
+          }
+        }
+
+        p + p {
+          margin-top: 1rem;
+        }
+      }
+
+      &__cta {
+        margin-top: 0.65rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          margin: 0 0.5rem;
+          font-size: 0.75rem;
+
+          a {
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+    }
+
+    .dons, .address, .facebook {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+
+      span {
+        display: block;
+        text-align: center;
+      }
+
+      a {
+        padding: 0.5rem;
+        border-radius: 0.875rem;
+        box-shadow: $shadow-base;
+
+        img {
+
+        }
+      }
+    }
+
+    .dons {
+      span {
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+
+        img {
+          width: 85px;
+          height: 85px;
+        }
+      }
+
+    }
+
+    .address {
+      span {
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+
+        img {
+          width: 85px;
+          height: 85px;
+        }
+      }
+    }
+
+    .facebook {
+      a {
+        padding: 0;
+        border-radius: 3em;
+
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 3.25em auto 0;
+    max-width: 275px;
+    color: #2F2F2F;
+
+    a {
+      color: currentColor;
+    }
+  }
+
+  .bg-footer-bottom {
+    background: url("../../img/footer/footer-bottom.svg") no-repeat;
+    background-size: contain;
+    margin-top: 1em;
+    height: 0.5em;
+  }
+}
+
+/* ------------------------
+       Media-queries
+------------------------ */
+@media screen and (min-width: 1250px) {
+  .footer {
+    padding: 2.25em 5.65em 0;
+
+    nav {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25em 8.875em;
+        padding: 0 5rem;
+
+        li {
+          margin-bottom: 0;
+
+          ul {
+            margin-top: 1.5rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      position: relative;
+      margin-top: 3em;
+      padding: 2em;
+      display: flex;
+      gap: 0 3.125rem;
+      align-items: flex-start;
+
+      .donor {
+
+        &__info {
+          padding: 1.25rem 2rem;
+
+          p {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span {
+              margin: 0 0 0 0.5rem;
+            }
+          }
+        }
+      }
+
+      .dons, .address, .facebook {
+        span {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          box-shadow: none;
+          border: 1px solid #F5F5F5;
+        }
+
+        a:hover {
+          box-shadow: rgba(100, 100, 100, 0.1) 0 1px 4px 0;
+        }
+      }
+
+      .facebook {
+        margin: 5.5% 0 0 10%;
+      }
+    }
+
+    &__bottom::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      height: 1px;
+      width: 200%;
+      background-color: #F5F5F5;
+      z-index: -1;
+    }
+
+    .copyright {
+      position: relative;
+      bottom: 1.25em;
+      right: 2em;
+      font-size: 0.875rem;
+      text-align: right;
+      margin: 3em 1.5em 0 auto;
+      max-width: none;
+    }
+
+    .bg-footer-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size: 100%;
+      margin-top: 0.75em;
+      height: 1em;
+    }
+  }
 }

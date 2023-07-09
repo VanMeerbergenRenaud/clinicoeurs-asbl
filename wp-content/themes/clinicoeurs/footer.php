@@ -1,106 +1,106 @@
-    <footer role="contentinfo" class="footer">
-        <section class="f-first">
-            <h2><?= get_field('f-first-title'); ?></h2>
-            <nav>
-                <h3 class="hidden"><?= get_field('f-first-title'); ?></h3>
-                <ul class="f-navigation">
-                    <?php if (have_rows('f-first-links')) {
-                        while (have_rows('f-first-links')) {
-                            the_row();
-                            $url = get_sub_field('url');
-                            $text = get_sub_field('text');
-                            ?>
-                            <li><a href="<?= $url; ?>"><?= $text; ?></a></li>
-                        <?php
+<!-- Footer section-->
+    <footer role="contentinfo" class="footer" tabindex="-1">
+        <nav aria-label="Footer">
+            <h2 role="heading" aria-level="2" class="hidden">Menu de navigation du site</h2>
+            <ul>
+                <li>
+                    <?= get_field('footer-title1'); ?>
+                    <ul class="navigation">
+                        <?php if (have_rows('footer-links1')) {
+                            while (have_rows('footer-links1')) {
+                                the_row();
+                                $url = get_sub_field('url');
+                                $text = get_sub_field('text');
+                                ?>
+                                <li><a href="<?= $url; ?>"><?= $text; ?></a></li>
+                                <?php
+                            }
                         }
-                    }
-                    ?>
-                </ul>
-            </nav>
-        </section>
-        <section class="f-second">
-            <h2><?= get_field('f-second-title'); ?></h2>
-            <nav>
-                <h3 class="hidden"><?= get_field('f-second-title'); ?></h3>
-                <ul class="f-contributions">
-                    <?php if (have_rows('f-second-links')) {
-                        while (have_rows('f-second-links')) {
-                            the_row();
-                            $url = get_sub_field('url');
-                            $text = get_sub_field('text');
-                            ?>
-                            <li><a href="<?= $url; ?>"><?= $text; ?></a></li>
-                        <?php
+                        ?>
+                    </ul>
+                </li>
+                <li>
+                    <?= get_field('footer-title2'); ?>
+                    <ul class="contributions">
+                        <?php if (have_rows('footer-links2')) {
+                            while (have_rows('footer-links2')) {
+                                the_row();
+                                $url = get_sub_field('url');
+                                $text = get_sub_field('text');
+                                ?>
+                                <li><a href="<?= $url; ?>"><?= $text; ?></a></li>
+                                <?php
+                            }
                         }
-                    }
-                    ?>
-                </ul>
-            </nav>
-        </section>
-        <section class="f-third">
-            <h2><?= get_field('f-third-title'); ?></h2>
-            <nav>
-                <h3 class="hidden"><?= get_field('f-third-title'); ?></h3>
-                <ul class="f-horaire">
-                    <?php if (have_rows('f-third-links')) {
-                        while (have_rows('f-third-links')) {
-                            the_row();
-                            $text = get_sub_field('text');
-                            ?>
-                            <li><?= $text; ?></li>
-                        <?php
+                        ?>
+                    </ul>
+                </li>
+                <li>
+                    <?= get_field('footer-title3'); ?>
+                    <ul class="horaire">
+                        <?php if (have_rows('footer-links3')) {
+                            while (have_rows('footer-links3')) {
+                                the_row();
+                                $text = get_sub_field('text');
+                                ?>
+                                <li><?= $text; ?></li>
+                                <?php
+                            }
                         }
-                    }
-                    ?>
-                </ul>
-            </nav>
-        </section>
-        <section class="f-full">
-            <h2 class="hidden">Informations pour les donateurs</h2>
-            <div class="bg-footer-top">
-                <h3>Informations pour les donateurs</h3>
-                <div class="donor-info">
-                    <p>
-                        Numéro de compte&nbsp;:<br>
-                        <span>BE 59 0018 4105 2926<img src="<?= get_field('clipboard'); ?>" alt=""></span>
-                    </p>
-                    <p>
-                        Numéro de téléphone&nbsp;:<br><span>+32 (0)493 71 87 37</span>
-                    </p>
+                        ?>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer__bottom">
+                <div class="donor">
+                    <span>Informations pour les donateurs</span>
+                    <div class="donor__info">
+                        <p>
+                            Numéro de compte&nbsp;:<br>
+                            <span>BE 59 0018 4105 2926</span>
+                        </p>
+                        <p>
+                            Numéro de téléphone&nbsp;:<br><span>+32 (0)493 71 87 37</span>
+                        </p>
+                    </div>
+                    <div class="donor__cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <g transform="translate(1 1)">
+                                <path d="M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-3 -3)" fill="none" stroke="#3a3d55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path d="M18,21.2V18" transform="translate(-10 -10)" fill="none" stroke="#3a3d55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path d="M18,12h0" transform="translate(-10 -7.2)" fill="none" stroke="#3a3d55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </g>
+                        </svg>
+                        <p>Visitez la <a href="" title="Vers la page de dons">page de dons</a> pour plus d’informations</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 17.999 16">
+                            <path d="M17.5,7h-.922A5.016,5.016,0,0,0,15.41,5.36L16,3H15A2.981,2.981,0,0,0,12.72,4.072,4.956,4.956,0,0,0,12,4H8A5,5,0,0,0,3.1,8H1.751a.751.751,0,0,1-.734-.9.77.77,0,0,1,.766-.6h.031A.188.188,0,0,0,2,6.313V5.688A.188.188,0,0,0,1.813,5.5a1.79,1.79,0,0,0-1.8,1.519A1.751,1.751,0,0,0,1.751,9H3a4.98,4.98,0,0,0,2,3.978V15.5a.5.5,0,0,0,.5.5h2a.5.5,0,0,0,.5-.5V14h4v1.5a.5.5,0,0,0,.5.5h2a.5.5,0,0,0,.5-.5V12.979A5,5,0,0,0,15.979,12H17.5a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,17.5,7Zm-4,2a.5.5,0,1,1,.5-.5A.5.5,0,0,1,13.5,9ZM8,3h4c.169,0,.334.013.5.025,0-.009,0-.016,0-.025a3,3,0,1,0-6,0c0,.066.016.128.019.194A5.94,5.94,0,0,1,8,3Z" transform="translate(-0.002)" fill="#f86363"/>
+                        </svg>
+                    </div>
                 </div>
-                <p class="cta-small">
-                    Visiter la <a href="/fr/donations">page de dons</a> pour plus d’informations
-                </p>
-            </div>
-            <div class="f-links">
-                <h3 class="hidden">Liens utiles</h3>
-                    <?php
-                    if (have_rows('f-donation-info')) {
-                        $total_rows = count(get_field('f-donation-info'));
-                        $counter = 0;
-
-                        while (have_rows('f-donation-info')) {
-                            the_row();
-                            $url = get_sub_field('url');
-                            $text = get_sub_field('text');
-                            $image = get_sub_field('image');
-                            $counter++;
-                            ?>
-
-                            <a href="<?= $url ?>" <?php if ($counter === $total_rows) echo 'class="facebook"'; ?>>
-                                <span><?= $text ?></span>
-                                <img src="<?= $image; ?>" alt="">
-                            </a>
-                        <?php
-                        }
-                    }
-                    ?>
+                <div class="dons">
+                    <span>Dons</span>
+                    <a href="" title="Vers la page de dons">
+                        <img src="<?= get_field("footer-bottom-link1"); ?>" alt="">
+                    </a>
+                </div>
+                <div class="address">
+                    <span>Adresse</span>
+                    <a href="" title="Voir l'adresse sur Google Maps">
+                        <img src="<?= get_field("footer-bottom-link2"); ?>" alt="">
+                    </a>
+                </div>
+                <div class="facebook">
+                    <span class="hidden">Facebook</span>
+                    <a href="" title="Vers la page Facebook de l'asbl">
+                        <img src="<?= get_field("footer-bottom-link3"); ?>" alt="">
+                    </a>
+                </div>
             </div>
             <p class="copyright">
-                © 2023 <a href="/accueil" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a> ASBL Vielsam&nbsp;-&nbsp;Réalisé par Renaud Van Meerbergen
+                © 2023 <a href="<?= get_home_url(); ?>" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Réalisé par Renaud Van Meerbergen.
             </p>
             <div class="bg-footer-bottom"></div>
-        </section>
+        </nav>
     </footer>
     <?php
         if (is_page('contact')) {
