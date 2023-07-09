@@ -27,13 +27,13 @@
       .previous,
       .next {
         position: absolute;
-        cursor: pointer;
-        width: 50%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem 0.55rem;
         background-color: $purple;
         border-radius: 50%;
+        cursor: pointer;
 
         &:hover {
           opacity: .9;
@@ -41,13 +41,11 @@
       }
 
       .previous {
-        left: -1em;
-        background-image: url('../../img/svg/arrow-left-testimonials.svg');
+        left: -1.5em;
       }
 
       .next {
         right: 0;
-        background-image: url('../../img/svg/arrow-right-testimonials.svg');
       }
     }
 
@@ -92,5 +90,69 @@
 
   .cta {
     background-color: $purple;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .testimonial {
+    padding: 5.5rem 12rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 0 8rem;
+
+    span, h2 {
+      max-width: 333px;
+    }
+
+    .slider {
+      grid-row: 1/5;
+      grid-column: 1/2;
+      position: relative;
+      margin: 0 0 4rem;
+      padding: 1.25em 1.75em 1.75em 1.25em;
+      border-radius: 1.25em;
+
+      .slide {
+        display: grid;
+        grid-template-columns: 135px 1fr;
+        align-items: flex-start;
+        gap: 0 2rem;
+
+        img {
+          width: 135px;
+          height: 105px;
+        }
+
+        p {
+          grid-row: 2/3;
+          grid-column: 1/2;
+          display: flex;
+          justify-content: center;
+          font-size: 0.65rem;
+
+          span {
+            position: relative;
+            top: 0;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+          }
+          span::before {
+            content: "|";
+            margin: 0 0.25rem;
+          }
+        }
+
+        blockquote {
+          margin-top: 0.25rem;
+          grid-row: 1/3;
+          grid-column: 2/3;
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    .cta {
+      margin: 3rem 0 0;
+    }
   }
 }
