@@ -226,6 +226,10 @@
 
       .donor {
 
+        span {
+          font-size: 0.875rem;
+        }
+
         &__info {
           padding: 1.25rem 2rem;
 
@@ -243,6 +247,7 @@
 
       .dons, .address, .facebook {
         span {
+          font-size: 0.875rem;
           margin-bottom: 1rem;
         }
 
@@ -257,7 +262,7 @@
       }
 
       .facebook {
-        margin: 5.5% 0 0 10%;
+        margin: 5.5% 0 0 17.5%;
       }
     }
 

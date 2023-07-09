@@ -25,3 +25,28 @@
     background-color: $pink;
   }
 }
+
+@media screen and (min-width: 1250px) {
+  .sponsor {
+    padding: 5.5rem 12rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 0 5.75rem;
+
+    &__span {
+      margin-top: 2.75rem;
+    }
+
+    &__gallery {
+      grid-row: 1/5;
+      grid-column: 2/3;
+      margin: 0 auto;
+      padding: 0;
+      gap: 2.75rem 2.5rem;
+    }
+
+    .cta {
+      margin: 3rem 0 2rem;
+    }
+  }
+}

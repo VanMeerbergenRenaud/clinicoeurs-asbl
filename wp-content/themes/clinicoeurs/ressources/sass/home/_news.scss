@@ -19,3 +19,36 @@
     background-color: $orange;
   }
 }
+
+@media screen and (min-width: 1250px) {
+  .news {
+    padding: 4rem 12rem;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 0 5.75rem;
+
+    &__span {
+      margin-top: 5.875rem;
+    }
+
+    h2, p {
+      max-width: 400px;
+    }
+
+    h2 {
+      margin-top: 0.75rem;
+    }
+
+    &__img {
+      grid-row: 1/5;
+      margin: 0;
+      width: 500px;
+      min-height: 475px;
+      border-radius: 2em;
+    }
+
+    .cta {
+      margin: 3rem 0;
+    }
+  }
+}

@@ -234,9 +234,10 @@ a, abbr {
   }
 
   .cta {
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 600;
     padding: 1rem 3.75rem 1.15rem 1.5rem;
+    height: fit-content;
   }
 
   h1, h2, h3, p, span, .cta {
