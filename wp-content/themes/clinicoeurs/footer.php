@@ -71,7 +71,7 @@
                                 <path d="M18,12h0" transform="translate(-10 -7.2)" fill="none" stroke="#3a3d55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
                             </g>
                         </svg>
-                        <p>Visitez la <a href="" title="Vers la page de dons">page de dons</a> pour plus d’informations</p>
+                        <p>Visitez la <a href="<?= get_home_url() . "/donations"; ?>" title="Vers la page de dons">page de dons</a> pour plus d’informations</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 17.999 16">
                             <path d="M17.5,7h-.922A5.016,5.016,0,0,0,15.41,5.36L16,3H15A2.981,2.981,0,0,0,12.72,4.072,4.956,4.956,0,0,0,12,4H8A5,5,0,0,0,3.1,8H1.751a.751.751,0,0,1-.734-.9.77.77,0,0,1,.766-.6h.031A.188.188,0,0,0,2,6.313V5.688A.188.188,0,0,0,1.813,5.5a1.79,1.79,0,0,0-1.8,1.519A1.751,1.751,0,0,0,1.751,9H3a4.98,4.98,0,0,0,2,3.978V15.5a.5.5,0,0,0,.5.5h2a.5.5,0,0,0,.5-.5V14h4v1.5a.5.5,0,0,0,.5.5h2a.5.5,0,0,0,.5-.5V12.979A5,5,0,0,0,15.979,12H17.5a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,17.5,7Zm-4,2a.5.5,0,1,1,.5-.5A.5.5,0,0,1,13.5,9ZM8,3h4c.169,0,.334.013.5.025,0-.009,0-.016,0-.025a3,3,0,1,0-6,0c0,.066.016.128.019.194A5.94,5.94,0,0,1,8,3Z" transform="translate(-0.002)" fill="#f86363"/>
                         </svg>
@@ -79,19 +79,19 @@
                 </div>
                 <div class="dons">
                     <span>Dons</span>
-                    <a href="" title="Vers la page de dons">
+                    <a href="<?= get_home_url() . "/donations"; ?>" title="Vers la page de dons">
                         <img src="<?= get_field("footer-bottom-link1"); ?>" alt="">
                     </a>
                 </div>
                 <div class="address">
                     <span>Adresse</span>
-                    <a href="" title="Voir l'adresse sur Google Maps">
+                    <a href="https://goo.gl/maps/pcbU3Nr1J4nSoixUA" title="Voir l'adresse sur Google Maps">
                         <img src="<?= get_field("footer-bottom-link2"); ?>" alt="">
                     </a>
                 </div>
                 <div class="facebook">
                     <span class="hidden">Facebook</span>
-                    <a href="" title="Vers la page Facebook de l'asbl">
+                    <a href="https://www.facebook.com/clinicoeurs.asbl" title="Vers la page Facebook de l'asbl">
                         <img src="<?= get_field("footer-bottom-link3"); ?>" alt="">
                     </a>
                 </div>

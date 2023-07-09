@@ -1,5 +1,5 @@
 <!-- Sponsors section -->
-<section class="sponsor" aria-label="Section des sponsors et partenaires">
+<section class="sponsor" aria-label="Section des sponsors et partenaires" id="sponsors">
     <span class="sponsor__span"><?= get_field("sponsor-span"); ?></span>
     <h2 role="heading" aria-level="2"><?= get_field("sponsor-title"); ?></h2>
     <p><?= get_field("sponsor-text"); ?></p>

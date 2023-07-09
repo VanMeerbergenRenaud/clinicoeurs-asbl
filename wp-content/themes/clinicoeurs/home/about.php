@@ -1,5 +1,5 @@
 <!-- About section -->
-<section class="about" aria-label="Section des services">
+<section class="about" aria-label="Section des services" id="services">
     <span class="about__span">Nos services</span>
     <h2 class="about__title">Présentation des différents services de l’ASBL</h2>
     <?php

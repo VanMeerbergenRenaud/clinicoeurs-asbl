@@ -1,5 +1,5 @@
 <!-- Volunteers section -->
-<section class="volunteers" aria-label="Section des bénévoles">
+<section class="volunteers" aria-label="Section des bénévoles" id="volunteers">
     <span class="volunteers__span"><?= get_field("volunteers-span"); ?></span>
     <h2 role="heading" aria-level="2"><?= get_field("volunteers-title"); ?></h2>
     <p><?= get_field("volunteers-text"); ?></p>

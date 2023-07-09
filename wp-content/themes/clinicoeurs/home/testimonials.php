@@ -1,5 +1,5 @@
 <!-- Testimonials section -->
-<section class="testimonial" aria-label="Section des témoignages">
+<section class="testimonial" aria-label="Section des témoignages" id="testimonials">
     <span class="testimonial__span"><?= get_field("testimonial-span"); ?></span>
     <h2 role="heading" aria-level="2"><?= get_field("testimonial-title"); ?></h2>
     <p><?= get_field("testimonial-text"); ?></p>
