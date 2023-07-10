@@ -1,7 +1,7 @@
 <section class="contact" id="contact" aria-label="Section du formulaire de contact">
     <div class="contact__container">
         <span class="contact__span"><?= get_field("contact-span"); ?></span>
-        <h2 class="contact__title"><?= get_field('contact-title'); ?></h2>
+        <h2 class="contact__title" role="heading" aria-level="2"><?= get_field('contact-title'); ?></h2>
         <p class="contact__text"><?= get_field('contact-text'); ?></p>
         <?php
         $feedback = hepl_session_get('hepl_contact_form_feedback') ?? false;
@@ -52,7 +52,7 @@
                 </fieldset>
                 <fieldset class="contact__info-2">
                     <div class="contact__info__user">
-                        <h3>Vous êtes un(e) potentiel(le)</h3>
+                        <h3 role="heading" aria-level="3">Vous êtes un(e) potentiel(le)</h3>
                         <?php
                         $roles = array(
                             'volunteer' => 'bénévole',

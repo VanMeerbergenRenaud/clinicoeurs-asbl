@@ -1,0 +1,57 @@
+/* Services */
+
+@import "../other/variables";
+
+.services {
+  &__span {
+
+  }
+
+  &__title {
+
+  }
+
+  nav.tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1.5rem;
+  }
+
+  .tablinks {
+    color: white;
+    padding: 0.65rem 1.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: $yellow;
+    transition: 0.3s ease;
+  }
+
+  .tablinks.active {
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  .wrapper_tabcontent {
+    background-color: white;
+    position: relative;
+    opacity: 1;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+
+  .tabcontent {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .tabcontent.active {
+    transition: all 1s ease;
+    min-height: 180px;
+    height: auto;
+  }
+}

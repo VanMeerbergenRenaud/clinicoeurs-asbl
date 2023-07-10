@@ -1,7 +1,7 @@
 <!-- About section -->
 <section class="about" aria-label="Section des services" id="services">
     <span class="about__span">Nos services</span>
-    <h2 class="about__title">Présentation des différents services de l’ASBL</h2>
+    <h2 class="about__title" role="heading" aria-level="2">Présentation des différents services de l’ASBL</h2>
     <?php
     if (have_rows('home-about')) {
         while (have_rows('home-about')) {
@@ -14,8 +14,8 @@
             ?>
 
             <article class="about__card">
-                <img src="<?= $image; ?>" alt="image de cliniclowns, de clinitalents et de clinijuniors">
-                <h3><?= $title; ?></h3>
+                <img src="<?= $image; ?>" alt="image de divers bénévoles">
+                <h3 role="heading" aria-level="3"><?= $title; ?></h3>
                 <p><?= $text; ?></p>
                 <a href="<?= $link; ?>" class="cta" title="Vers la page des services">
                     En savoir plus

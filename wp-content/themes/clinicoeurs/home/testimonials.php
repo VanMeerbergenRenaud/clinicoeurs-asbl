@@ -30,7 +30,7 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-    <a href="#" class="cta">
+    <a href="<?= get_home_url() . "/contact" ?>" class="cta" title="Vers la page de contact">
         Devenir bénévole
         <span></span>
     </a>

@@ -2,19 +2,27 @@
 
 .browserupgrade, .no-js__message {
   display: block;
-  background: tomato;
+  margin: 0 auto 1rem;
   padding: 2rem;
-  margin: 0 0 1rem;
-  z-index: 999;
+  text-align: center;
+  max-width: 100%;
+  font-size: 1rem;
   font-weight: 700;
+  background: tomato;
+  z-index: 100;
 
   a {
     border-bottom: 1px solid black;
   }
+
+  a:hover {
+    color: #003647;
+    border-bottom: 1px solid #003647;
+  }
 }
 
 .js-enabled .no-js__message {
-  display:none;
+  display: none;
 }
 
 .sr-only, .hidden {

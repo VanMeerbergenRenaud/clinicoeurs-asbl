@@ -19,7 +19,7 @@
         ?>
     </div>
 
-    <a href="#" class="cta">
+    <a href="<?= get_home_url() . "/volunteers" ?>" class="cta" title="Vers la page des sponsors">
         Voir tous les partenaires
         <span></span>
     </a>

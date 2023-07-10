@@ -12,4 +12,5 @@ mix.sass('wp-content/themes/clinicoeurs/ressources/sass/legal-notice/main.scss',
 
 /* JS */
 mix.js('wp-content/themes/clinicoeurs/ressources/js/site.js', 'wp-content/themes/clinicoeurs/public/js');
+mix.js('wp-content/themes/clinicoeurs/ressources/js/services.js', 'wp-content/themes/clinicoeurs/public/js/services.js');
 mix.js('wp-content/themes/clinicoeurs/ressources/js/form.js', 'wp-content/themes/clinicoeurs/public/js/form.js');

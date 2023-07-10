@@ -1,7 +1,7 @@
 <!-- Footer section-->
     <footer role="contentinfo" class="footer" tabindex="-1">
         <nav aria-label="Footer">
-            <h2 role="heading" aria-level="2" class="hidden">Menu de navigation du site</h2>
+            <h2 role="heading" aria-level="2" class="hidden">Menu de navigation du bas de page</h2>
             <ul>
                 <li>
                     <?= get_field('footer-title1'); ?>
@@ -80,19 +80,19 @@
                 <div class="dons">
                     <span>Dons</span>
                     <a href="<?= get_home_url() . "/donations"; ?>" title="Vers la page de dons">
-                        <img src="<?= get_field("footer-bottom-link1"); ?>" alt="">
+                        <img src="<?= get_field("footer-bottom-link1"); ?>" alt="qr-code">
                     </a>
                 </div>
                 <div class="address">
                     <span>Adresse</span>
                     <a href="https://goo.gl/maps/pcbU3Nr1J4nSoixUA" title="Voir l'adresse sur Google Maps">
-                        <img src="<?= get_field("footer-bottom-link2"); ?>" alt="">
+                        <img src="<?= get_field("footer-bottom-link2"); ?>" alt="icône d'une carte de localisation">
                     </a>
                 </div>
                 <div class="facebook">
                     <span class="hidden">Facebook</span>
                     <a href="https://www.facebook.com/clinicoeurs.asbl" title="Vers la page Facebook de l'asbl">
-                        <img src="<?= get_field("footer-bottom-link3"); ?>" alt="">
+                        <img src="<?= get_field("footer-bottom-link3"); ?>" alt="logo de Facebook">
                     </a>
                 </div>
             </div>
@@ -105,6 +105,8 @@
     <?php
         if (is_page('contact')) {
             echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/form.js"></script>';
+        } elseif (is_page('services')) {
+            echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/services.js"></script>';
         } else {
             echo '<script src="' . get_stylesheet_directory_uri() . '/public/js/site.js"></script>';
         }
