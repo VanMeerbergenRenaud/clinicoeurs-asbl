@@ -1,5 +1,52 @@
 /* Hero */
 
+@import "../other/variables";
+
 .hero {
 
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin: 1.5rem 0 2rem;
+  }
+
+  img {
+
+  }
+
+  .cta {
+    margin-top: 2rem;
+    background-color: $yellow;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hero {
+    padding: 4rem 9.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    h1 {
+      margin-top: 4.375rem;
+
+    }
+
+    p {
+      margin: 1.5rem 0 0;
+    }
+
+    img {
+      margin-left: 4rem;
+      grid-row: 1/4;
+      grid-column: 2/3;
+      max-height: 480px;
+      object-fit: contain;
+    }
+
+    .cta {
+      margin: 3rem 0 4.375rem;
+    }
+  }
 }

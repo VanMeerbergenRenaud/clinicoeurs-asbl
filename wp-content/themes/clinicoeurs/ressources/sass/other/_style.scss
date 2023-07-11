@@ -68,6 +68,7 @@ p {
   font-size: 0.875rem; /* 12px */
   font-weight: 400;
   line-height: 1.58;
+  max-width: 500px;
 }
 
 span {
@@ -75,6 +76,13 @@ span {
   font-size: 0.75rem; /* 12px */
   font-weight: 400;
   text-transform: uppercase;
+}
+
+
+section {
+  span + h2 {
+    text-align: center;
+  }
 }
 
 /* Img & Overlay */
@@ -133,6 +141,7 @@ a, abbr {
     border-left: none;
     border-top: none;
   }
+
   span::before {
     content: "";
     position: absolute;
@@ -251,6 +260,6 @@ input, textarea {
 
 @media screen and (min-width: 1650px) {
   body {
-   padding: 0 7.5rem;
+    padding: 0 7.5rem;
   }
 }

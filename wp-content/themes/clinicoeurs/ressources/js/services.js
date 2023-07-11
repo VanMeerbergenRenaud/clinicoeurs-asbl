@@ -40,3 +40,4 @@ function openTabs(event, links, tabs) {
 }
 
 initTabs();
+

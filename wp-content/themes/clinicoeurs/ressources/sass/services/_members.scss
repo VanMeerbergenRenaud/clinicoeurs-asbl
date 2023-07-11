@@ -1,0 +1,42 @@
+/* Members */
+
+.members {
+  &__title {
+    color: #549EF6;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  img {
+    margin: 1.5em auto 2em;
+  }
+
+  .cta {
+    background-color: #549EF6;
+  }
+}
+
+@media screen and (min-width: 1250px)  {
+  .members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 6.5em;
+
+    &__title {
+      margin-top: 4.8rem;
+    }
+
+    img {
+      grid-row: 1/5;
+      grid-column: 1/2;
+      margin: 0;
+      max-height: 485px;
+    }
+
+    .cta {
+      margin: 3rem 0 4.8rem;
+    }
+  }
+}

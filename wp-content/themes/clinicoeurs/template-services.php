@@ -46,24 +46,25 @@
     <section class="gallery">
         <span><?= get_field("services-gallery-span"); ?></span>
         <h2 role="heading" aria-level="3"><?= get_field("services-gallery-title"); ?></h2>
-        <div class="gallery__img">
-            <?php
-            $images = get_field('services-gallery');
-
-            if ($images) {
-                foreach ($images as $image) {
-                    $image_url = $image['url'];
-                    $image_alt = $image['alt'];
-
-                    echo '<img src="' . $image_url . '" alt="' . $image_alt . '">';
+        <div class="gallery__slider">
+            <div class="gallery__slider__img">
+                <?php
+                $images = get_field('services-gallery');
+                if ($images) {
+                    foreach ($images as $image) {
+                        $image_url = $image['url'];
+                        $image_alt = $image['alt'];
+                        echo '<img src="' . $image_url . '" alt="' . $image_alt . '">';
+                    }
                 }
-            }
-            ?>
+                ?>
+            </div>
         </div>
     </section>
     <section class="members">
-        <span><?= get_field("services-members-span"); ?></span>
+        <span class="members__title"><?= get_field("services-members-span"); ?></span>
         <h2 role="heading" aria-level="3"><?= get_field("services-members-title"); ?></h2>
+        <p><?= get_field("services-members-text"); ?></p>
         <img src="<?= get_field("services-members-img"); ?>" alt="">
         <a href="<?= get_home_url() . "/volunteers"; ?>" class="cta" title="Vers la page des bénévoles">
             Voir tous les membres
@@ -71,7 +72,7 @@
         </a>
     </section>
     <section class="callToAction">
-        <h2 role="heading" aria-level="2">Volontaire pour nous soutenir sous forme de dons ?</h2>
+        <h2 role="heading" aria-level="2">Volontaire pour nous soutenir sous forme de dons&nbsp;?</h2>
         <p>
             N’hésitez pas à nous <a href="<?= get_home_url() . "/contact"; ?>">contacter</a> et à regarder notre
             <a href="<?= get_home_url() . "/donations"; ?>">page de dons</a> expliquant tout ce que vous devez savoir.
