@@ -23,19 +23,19 @@
                 ?>
 
                 <section class="<?= esc_attr($class); ?>">
-                    <?php if ($title) : ?>
+                    <?php if ($title): ?>
                         <span class="<?= esc_attr($class); ?>__span"><?= esc_html($title); ?></span>
                     <?php endif; ?>
-                    <?php if ($subtitle) : ?>
+                    <?php if ($subtitle): ?>
                         <h2 role="heading" aria-level="2"><?= esc_html($subtitle); ?></h2>
                     <?php endif; ?>
-                    <?php if ($text) : ?>
+                    <?php if ($text): ?>
                         <p><?= esc_html($text); ?></p>
                     <?php endif; ?>
-                    <?php if ($image) : ?>
+                    <?php if ($image): ?>
                         <img src="<?= esc_url($image); ?>" alt="Cliniclowns en groupe et joyeux">
                     <?php endif; ?>
-                    <?php if ($list) : ?>
+                    <?php if ($list): ?>
                         <ul>
                             <?php if (have_rows('list')) : ?>
                                 <?php while (have_rows('list')) : the_row(); ?>

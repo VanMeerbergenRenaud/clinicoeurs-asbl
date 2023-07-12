@@ -24,6 +24,9 @@
         if (isset($page_styles[$page_slug])) {
             $stylesheet = $page_styles[$page_slug];
             echo "<link rel='stylesheet' type='text/css' href='$stylesheet_uri$stylesheet.css'>";
+        } elseif (is_404()) {
+            $p404 = 404;
+            echo "<link rel='stylesheet' type='text/css' href='$stylesheet_uri$p404.css'>";
         }
     ?>
 

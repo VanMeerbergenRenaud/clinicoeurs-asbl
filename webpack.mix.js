@@ -9,6 +9,7 @@ mix.sass('wp-content/themes/clinicoeurs/ressources/sass/news/main.scss', 'wp-con
 mix.sass('wp-content/themes/clinicoeurs/ressources/sass/donations/main.scss', 'wp-content/themes/clinicoeurs/public/css/donations.css');
 mix.sass('wp-content/themes/clinicoeurs/ressources/sass/contact/main.scss', 'wp-content/themes/clinicoeurs/public/css/contact.css');
 mix.sass('wp-content/themes/clinicoeurs/ressources/sass/legal-notice/main.scss', 'wp-content/themes/clinicoeurs/public/css/legal-notice.css');
+mix.sass('wp-content/themes/clinicoeurs/ressources/sass/404/main.scss', 'wp-content/themes/clinicoeurs/public/css/404.css');
 
 /* JS */
 mix.js('wp-content/themes/clinicoeurs/ressources/js/site.js', 'wp-content/themes/clinicoeurs/public/js');
