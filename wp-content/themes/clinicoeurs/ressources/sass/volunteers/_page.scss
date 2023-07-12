@@ -1,0 +1,115 @@
+/* Hero, Volunteers, Partners, Sponsors */
+
+.volunteers, .partners, .sponsors {
+  &__span {
+    display: block;
+    text-align: center;
+    color: #179ACB;
+  }
+
+  .cta {
+    margin-top: 3em;
+    background-color: #179ACB;
+  }
+}
+
+.volunteers {
+  .cta {
+    margin-top: 2em;
+  }
+}
+
+.partners, .sponsors {
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1.25rem;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hero {
+    img {
+      margin-left: 2.5rem;
+    }
+  }
+
+  .volunteers, .partners, .sponsors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 6rem;
+    padding: 5.5em 9.375em;
+
+    &__span, h2 {
+      text-align: left;
+    }
+
+    .cta {
+      margin: 0;
+    }
+  }
+
+  .volunteers {
+
+    &__span {
+      margin-top: 3rem;
+    }
+
+    h2 {
+      margin: 1.5rem 0 3rem;
+    }
+
+    img {
+      grid-row: 1/5;
+      grid-column: 1/2;
+    }
+  }
+
+  .partners, .sponsors {
+
+    &__span {
+      margin: 0 0 0.75rem;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 1.5rem 0 3rem;
+    }
+
+    &__gallery {
+      grid-row: 1/5;
+      grid-column: 1/2;
+      gap: 3rem;
+
+      img {
+        width: 115px;
+        height: 115px;
+        border: 1px solid #DEDEDE;
+      }
+    }
+  }
+
+  .partners {
+    &__gallery {
+      grid-column: 2/3;
+    }
+  }
+
+  .sponsors {
+    .cta {
+      margin-bottom: 7.5rem;
+    }
+  }
+}

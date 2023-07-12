@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: white;
+}
+
 body {
   font-family: 'Comic Sans', 'Comic Sans MS', 'Fredoka', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
@@ -15,21 +19,10 @@ body {
   color: black;
   max-width: 2000px;
   overflow-x: hidden;
-  background-color: white;
+  background-size: cover;
+  background: url("../../img/background/mobile.jpg") no-repeat top center;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  background-size: contain;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: url("../../img/background/mobile.jpg") no-repeat;
 }
 
 section {
@@ -76,13 +69,6 @@ span {
   font-size: 0.75rem; /* 12px */
   font-weight: 400;
   text-transform: uppercase;
-}
-
-
-section {
-  span + h2 {
-    text-align: center;
-  }
 }
 
 /* Img & Overlay */
@@ -206,8 +192,8 @@ input, textarea {
       Media queries
 ------------------------ */
 @media screen and (min-width: 1250px) {
-  body::before {
-    background: url("../../img/background/desktop.jpg") no-repeat;
+  body {
+    background: url("../../img/background/desktop.jpg") no-repeat top center;
   }
 
   .none {
@@ -231,6 +217,7 @@ input, textarea {
   h2 {
     font-size: 2em; /* 32px */
     line-height: 1.25;
+
   }
 
   h3 {

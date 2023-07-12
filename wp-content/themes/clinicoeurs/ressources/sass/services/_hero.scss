@@ -2,6 +2,13 @@
 
 @import "../other/variables";
 
+ /* Other pages only */
+section {
+  span + h2 {
+    text-align: center;
+  }
+}
+
 .hero {
 
   h1 {

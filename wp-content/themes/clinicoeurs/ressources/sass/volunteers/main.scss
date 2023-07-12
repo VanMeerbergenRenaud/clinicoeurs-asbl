@@ -11,7 +11,9 @@
 @import '../other/header';
 
 /* Main section */
-
+@import "../services/hero";
+@import "page";
+@import "../other/callToAction";
 
 /* Footer section */
 @import '../other/footer';
