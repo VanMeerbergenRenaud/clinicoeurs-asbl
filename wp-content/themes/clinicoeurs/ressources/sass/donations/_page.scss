@@ -2,6 +2,14 @@
 
 @import "../other/variables";
 
+.hero {
+  p {
+    a {
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
 .operation, .benefits, .legislation, .legsDuo {
   &__span {
     color: $red;
@@ -25,6 +33,7 @@
       margin-top: 1.25rem;
     }
   }
+
   img {
     margin-top: 2rem;
     border-radius: 1rem;
@@ -42,6 +51,7 @@
 .benefits, .legislation, .legsDuo {
   ul {
     list-style-type: none;
+
     li {
       font-family: "Fredoka", sans-serif;
       font-size: 1rem;
@@ -52,9 +62,25 @@
         margin-top: 1rem;
       }
     }
-     li + li {
-       margin-top: 1.5rem;
-     }
+
+    li + li {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.details {
+  &__span {
+    display: block;
+    color: $red;
+  }
+
+  &__span, h2 {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
   }
 }
 
