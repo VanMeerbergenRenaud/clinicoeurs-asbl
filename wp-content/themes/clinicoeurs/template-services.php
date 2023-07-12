@@ -3,9 +3,9 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 <main>
     <section class="hero" aria-label="Section de présentation de la page des services">
-        <h1 role="heading" aria-level="2"><?= get_field("services-title"); ?></h1>
-        <p><?= get_field("services-text"); ?></p>
-        <img src="<?= get_field("services-img"); ?>" alt="Deux clowns de l'asbl">
+        <h1 role="heading" aria-level="2"><?= get_field("hero-title"); ?></h1>
+        <p><?= get_field("hero-text"); ?></p>
+        <img src="<?= get_field("hero-img"); ?>" alt="Deux clowns de l'asbl">
         <a href="<?= get_home_url() . "/contact"; ?>" class="cta" title="Vers la page de contact">
             Rejoignez - nous
             <span></span>

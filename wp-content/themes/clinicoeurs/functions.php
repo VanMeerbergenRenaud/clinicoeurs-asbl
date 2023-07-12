@@ -11,50 +11,25 @@ require_once(__DIR__ . '/controllers/ContactForm.php');
 // Disable Wordpress' default Gutenberg Editor:
 add_filter('use_block_editor_for_post', '__return_false', 10);
 
-// Register existing navigation menus
-register_nav_menu('main', 'Navigation principale du site web (en-tête)');
-register_nav_menu('footer', 'Navigation de pied de page');
-register_nav_menu('social-media', 'Liens vers les réseaux sociaux');
-
-// Custom function that returns a menu structure for given location
-function hepl_get_menu(string $location, ?array $attributes = []): array
-{
-// 1. Récupérer les liens en base de données pour la location $location
-    $locations = get_nav_menu_locations();
-    $menuId = $locations[$location];
-    $items = wp_get_nav_menu_items($menuId);
-
-// 2. Formater les liens récupérés en objets qui contiennent les attributs suivants :
-// - href : l'URL complète pour ce lien
-// - label : le libellé affichable pour ce lien
-    $links = [];
-
-    foreach ($items as $item) {
-        $link = new stdClass();
-        $link->href = $item->url;
-        $link->label = $item->title;
-
-        foreach ($attributes as $attribute) {
-            $link->$attribute = get_field($attribute, $item->ID);
-        }
-
-        $links[] = $link;
-    }
-
-// 3. Retourner l'ensemble des liens formatés en un seul tableau non-associatif
-    return $links;
-}
-
 // Activer les images "thumbnail" sur nos posts
 add_theme_support('post-thumbnails');
-add_image_size('animal_thumbnail', 400, 400, true);
+add_image_size('img-thumbnail', 400, 400, true);
 
 // Enregistrer un custom post type :
 function hepl_register_custom_post_types(): void
 {
+    register_post_type('news', [
+        'label' => 'Actualités',
+        'description' => 'Nos dernières actualités.',
+        'public' => true,
+        'menu_position' => 30,
+        'menu_icon' => 'dashicons-welcome-write-blog', // https://developer.wordpress.org/resource/dashicons/#pets,
+        'supports' => ['title','thumbnail'],
+    ]);
+
     register_post_type('message', [
         'label' => 'Message de contact',
-        'description' => 'Les messages envoyés via le formulaire de contact.',
+        'description' => 'Messages envoyés via le formulaire de contact.',
         'public' => true,
         'menu_position' => 20,
         'menu_icon' => 'dashicons-email', // https://developer.wordpress.org/resource/dashicons/#pets,
@@ -146,7 +121,7 @@ function hepl_session_get(string $key)
 }
 
 
-// Ajout d'image sous format SVG et EBP
+// Ajout d'image sous format SVG et WEBP
 add_filter('upload_mimes', 'capitaine_mime_types');
 add_filter('wp_check_filetype_and_ext', 'capitaine_file_types', 10, 4);
 

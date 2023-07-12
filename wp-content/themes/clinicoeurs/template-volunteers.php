@@ -48,7 +48,7 @@
         <span class="sponsors__span"><?= get_field("sponsors-span"); ?></span>
         <h2 role="heading" aria-level="2"><?= get_field("sponsors-title"); ?></h2>
         <p><?= get_field("sponsors-text"); ?></p>
-        <!-- Partners Gallery -->
+        <!-- Sponsors Gallery -->
         <div class="sponsors__gallery">
             <?php
             $images = get_field('sponsors-gallery');
@@ -68,7 +68,6 @@
             <span></span>
         </a>
     </section>
-
     <section class="callToAction">
         <h2 role="heading" aria-level="2">Volontaire pour nous soutenir sous forme de don&nbsp;?</h2>
         <p>

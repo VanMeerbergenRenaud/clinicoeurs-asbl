@@ -12,7 +12,7 @@
                                 $url = get_sub_field('url');
                                 $text = get_sub_field('text');
                                 ?>
-                                <li><a href="<?= $url; ?>"><?= $text; ?></a></li>
+                                <li><a href="<?= $url; ?>" class="cta-border"><?= $text; ?></a></li>
                                 <?php
                             }
                         }
@@ -28,7 +28,7 @@
                                 $url = get_sub_field('url');
                                 $text = get_sub_field('text');
                                 ?>
-                                <li><a href="<?= $url; ?>"><?= $text; ?></a></li>
+                                <li><a href="<?= $url; ?>" class="cta-border"><?= $text; ?></a></li>
                                 <?php
                             }
                         }
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <p class="copyright">
-                © 2023 <a href="<?= get_home_url(); ?>" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Réalisé par Renaud Van Meerbergen.
+                © 2023 <a href="<?= get_home_url(); ?> " class="cta-border" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Réalisé par Renaud Van Meerbergen.
             </p>
             <div class="bg-footer-bottom"></div>
         </nav>
