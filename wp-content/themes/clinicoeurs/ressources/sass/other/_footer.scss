@@ -202,8 +202,8 @@
       ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.25em 8.875em;
-        padding: 0 5rem;
+        gap: 1.25rem 7rem;
+        padding: 0 5.5rem;
 
         li {
           margin-bottom: 0;
@@ -213,6 +213,7 @@
             padding: 0;
           }
         }
+
       }
     }
 

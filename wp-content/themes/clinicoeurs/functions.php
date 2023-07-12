@@ -11,6 +11,10 @@ require_once(__DIR__ . '/controllers/ContactForm.php');
 // Disable Wordpress' default Gutenberg Editor:
 add_filter('use_block_editor_for_post', '__return_false', 10);
 
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+}
+
 // Activer les images "thumbnail" sur nos posts
 add_theme_support('post-thumbnails');
 add_image_size('img-thumbnail', 400, 400, true);

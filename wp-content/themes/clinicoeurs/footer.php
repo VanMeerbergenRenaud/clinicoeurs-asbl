@@ -4,10 +4,10 @@
             <h2 role="heading" aria-level="2" class="hidden">Menu de navigation du bas de page</h2>
             <ul>
                 <li>
-                    <?= get_field('footer-title1'); ?>
+                    <?= get_field('footer-title1', 'option'); ?>
                     <ul class="navigation">
-                        <?php if (have_rows('footer-links1')) {
-                            while (have_rows('footer-links1')) {
+                        <?php if (have_rows('footer-links1', 'option')) {
+                            while (have_rows('footer-links1', 'option')) {
                                 the_row();
                                 $url = get_sub_field('url');
                                 $text = get_sub_field('text');
@@ -20,10 +20,10 @@
                     </ul>
                 </li>
                 <li>
-                    <?= get_field('footer-title2'); ?>
+                    <?= get_field('footer-title2', 'option'); ?>
                     <ul class="contributions">
-                        <?php if (have_rows('footer-links2')) {
-                            while (have_rows('footer-links2')) {
+                        <?php if (have_rows('footer-links2', 'option')) {
+                            while (have_rows('footer-links2', 'option')) {
                                 the_row();
                                 $url = get_sub_field('url');
                                 $text = get_sub_field('text');
@@ -36,10 +36,10 @@
                     </ul>
                 </li>
                 <li>
-                    <?= get_field('footer-title3'); ?>
+                    <?= get_field('footer-title3', 'option'); ?>
                     <ul class="horaire">
-                        <?php if (have_rows('footer-links3')) {
-                            while (have_rows('footer-links3')) {
+                        <?php if (have_rows('footer-links3', 'option')) {
+                            while (have_rows('footer-links3', 'option')) {
                                 the_row();
                                 $text = get_sub_field('text');
                                 ?>
@@ -80,19 +80,19 @@
                 <div class="dons">
                     <span>Dons</span>
                     <a href="<?= get_home_url() . "/donations"; ?>" title="Vers la page de dons">
-                        <img src="<?= get_field("footer-bottom-link1"); ?>" alt="qr-code">
+                        <img src="<?= get_field("footer-bottom-link1", 'option'); ?>" alt="qr-code">
                     </a>
                 </div>
                 <div class="address">
                     <span>Adresse</span>
                     <a href="https://goo.gl/maps/pcbU3Nr1J4nSoixUA" title="Voir l'adresse sur Google Maps">
-                        <img src="<?= get_field("footer-bottom-link2"); ?>" alt="icône d'une carte de localisation">
+                        <img src="<?= get_field("footer-bottom-link2", 'option'); ?>" alt="icône d'une carte de localisation">
                     </a>
                 </div>
                 <div class="facebook">
                     <span class="hidden">Facebook</span>
                     <a href="https://www.facebook.com/clinicoeurs.asbl" title="Vers la page Facebook de l'asbl">
-                        <img src="<?= get_field("footer-bottom-link3"); ?>" alt="logo de Facebook">
+                        <img src="<?= get_field("footer-bottom-link3", 'option'); ?>" alt="logo de Facebook">
                     </a>
                 </div>
             </div>
