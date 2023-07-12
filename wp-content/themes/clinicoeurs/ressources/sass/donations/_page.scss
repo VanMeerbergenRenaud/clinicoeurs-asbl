@@ -1,8 +1,65 @@
 /* Hero, Donations, ... */
 
+@import "../other/variables";
+
+.operation, .benefits, .legislation, .legsDuo {
+  &__span {
+    color: $red;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  ul {
+    margin: 1.25rem 0 0 0.75rem;
+    list-style-type: gujarati;
+
+    li {
+      padding-left: 0.75rem;;
+      font-size: 0.875rem;
+      line-height: 1.44;
+    }
+
+    li + li {
+      margin-top: 1.25rem;
+    }
+  }
+  img {
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
+}
+
+.benefits, .legislation, .legsDuo {
+  ul {
+    list-style-type: none;
+    li {
+      font-family: "Fredoka", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+     li + li {
+       margin-top: 1.5rem;
+     }
+  }
+}
+
+.legislation {
+  img {
+    margin-top: 0;
+  }
+}
 
 @media screen and (min-width: 1250px) {
   .hero {
-
+    h1 {
+      margin-top: 3rem;
+    }
   }
 }
