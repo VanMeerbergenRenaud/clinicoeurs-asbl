@@ -2,54 +2,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
-        <?php
-        // Fonction pour afficher les diverses sections ayant presque la même structure.
-        function display_section_structure($section_name): void
-        {
-            $section_span = get_field($section_name . '-span');
-            $section_title = get_field($section_name . '-title');
-            $section_text = get_field($section_name . '-text');
-            $section_img = get_field($section_name . '-img');
-            $list_name = $section_name . '-list';
-
-            ?>
-            <section class="<?= $section_name ?>" aria-label="Section <?= $section_name ?>">
-                <?php if ($section_span) : ?>
-                    <span class="<?= $section_name ?>__span"><?= get_field($section_name . '-span'); ?></span>
-                <?php endif; ?>
-
-                <?php if ($section_title) : ?>
-                    <h2 role="heading" aria-level="2"><?= $section_title; ?></h2>
-                <?php endif; ?>
-
-                <?php if ($section_text) : ?>
-                    <p><?= $section_text; ?></p>
-                <?php endif; ?>
-
-                <?php if ($section_img) : ?>
-                    <img src="<?= $section_img; ?>" alt="Cliniclowns en groupe et joyeux">
-                <?php endif; ?>
-
-                <?php if (have_rows($list_name)) : ?>
-                    <ul>
-                        <?php while (have_rows($list_name)) : the_row();
-                            $title = get_sub_field('title');
-                            $text = get_sub_field('text');
-                            ?>
-                            <li>
-                                <?= $title; ?>
-                                <?php if ($text) : ?>
-                                    <p><?= $text; ?></p>
-                                <?php endif; ?>
-                            </li>
-                        <?php endwhile; ?>
-                    </ul>
-                <?php endif; ?>
-            </section>
-            <?php
-        }
-        ?>
-        <section class="hero" aria-label="Section des donations">
+        <section class="hero" aria-label="Section d'introduction aux dons et legs en duo">
             <h1 role="heading" aria-level="2"><?= get_field("hero-title"); ?></h1>
             <p><?= get_field("hero-text"); ?></p>
             <img src="<?= get_field("hero-img"); ?>" alt="Cliniclown aidant un patient en chaise roulante">
@@ -58,18 +11,56 @@
                 <span></span>
             </a>
         </section>
-        <?php
-        // Section "operation"
-        display_section_structure('operation');
-        // Section "benefits"
-        display_section_structure('benefits');
-        // Section "details"
-        display_section_structure('details');
-        // Section "legislation"
-        display_section_structure('legislation');
-        // Section "legsDuo"
-        display_section_structure('legsDuo');
-        ?>
+        <?php if (have_rows('donations')) : ?>
+            <?php while (have_rows('donations')) : the_row(); ?>
+                <?php
+                $class = get_sub_field('class');
+                $title = get_sub_field('title');
+                $subtitle = get_sub_field('subtitle');
+                $text = get_sub_field('text');
+                $image = get_sub_field('img');
+                $list = get_sub_field('list');
+                ?>
+
+                <section class="<?= esc_attr($class); ?>">
+                    <?php if ($title) : ?>
+                        <span class="<?= esc_attr($class); ?>__span"><?= esc_html($title); ?></span>
+                    <?php endif; ?>
+                    <?php if ($subtitle) : ?>
+                        <h2 role="heading" aria-level="2"><?= esc_html($subtitle); ?></h2>
+                    <?php endif; ?>
+                    <?php if ($text) : ?>
+                        <p><?= esc_html($text); ?></p>
+                    <?php endif; ?>
+                    <?php if ($image) : ?>
+                        <img src="<?= esc_url($image); ?>" alt="Cliniclowns en groupe et joyeux">
+                    <?php endif; ?>
+                    <?php if ($list) : ?>
+                        <ul>
+                            <?php if (have_rows('list')) : ?>
+                                <?php while (have_rows('list')) : the_row(); ?>
+                                    <li>
+                                        <?php the_sub_field('title'); ?>
+                                        <p><?php the_sub_field('text'); ?></p>
+                                    </li>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                        </ul>
+                    <?php endif; ?>
+                </section>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        <section class="callToAction">
+            <h2 role="heading" aria-level="2">Volontaire pour nous soutenir sous forme de don&nbsp;?</h2>
+            <p>
+                N’hésitez pas à nous <a href="<?= get_home_url() . "/contact"; ?>">contacter</a> et à regarder notre
+                <a href="<?= get_home_url() . "/donations"; ?>">page de dons</a> expliquant tout ce que vous devez savoir.
+            </p>
+            <a href="<?= get_home_url() . "/contact"; ?>" class="cta" title="Vers la page de contact">
+                Nous contacter
+                <span></span>
+            </a>
+        </section>
     </main>
 <?php endwhile; endif; ?>
 <?= get_footer(); ?>
