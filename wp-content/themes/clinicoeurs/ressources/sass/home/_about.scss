@@ -30,7 +30,7 @@
 
     h3 {
       margin-top: 1.25em;
-      color: $red;
+      color: $yellow;
       text-transform: uppercase;
       font-family: "Comic Sans", "Comic Sans MS", sans-serif;
     }
@@ -41,7 +41,32 @@
 
     .cta {
       margin: 0;
+      background-color: $yellow;
+    }
+  }
+
+  &__card:nth-of-type(2) {
+    h3 {
+      color: $red;
+    }
+    .cta {
       background-color: $red;
+    }
+  }
+  &__card:nth-of-type(3) {
+    h3 {
+      color: $blue;
+    }
+    .cta {
+      background-color: $blue;
+    }
+  }
+  &__card:nth-of-type(4) {
+    h3 {
+      color: $green;
+    }
+    .cta {
+      background-color: $green;
     }
   }
 }

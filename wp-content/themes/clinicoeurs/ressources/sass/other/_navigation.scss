@@ -163,20 +163,10 @@
           padding: 0.5em 2em;
           font-size: 1rem;
           font-weight: 600;
-          color: #1b3839;
         }
 
         .link:hover {
-          color: $blue;
-        }
-      }
-
-      &:hover {
-        .link {
-          color: #cccccc;
-          &:hover {
-            color: black;
-          }
+          color: black;
         }
       }
 
@@ -186,6 +176,21 @@
         color: white;
         background-color: $yellow;
         border-radius: 3em;
+
+        &:hover {
+          color: white;
+          scale: 1.05;
+        }
+      }
+
+      &:hover {
+        .link {
+          color: #cccccc;
+        }
+
+        .link:hover {
+          color: black;
+        }
       }
     }
 
