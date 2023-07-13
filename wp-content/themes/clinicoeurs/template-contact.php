@@ -36,7 +36,7 @@
             </svg>
         </a>
     </section>
-    <?php get_template_part('home/contact'); ?>
+    <?php get_template_part('otherParts/contact'); ?>
     <section class="localisation">
         <h2 class="localisation__title" role="heading" aria-level="2">Notre localisation</h2>
         <img src="<?= get_field("localisation"); ?>" alt="Vue de l'établissement de l'asbl depuis Google Map" class="localisation__img">

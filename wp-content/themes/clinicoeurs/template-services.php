@@ -34,7 +34,7 @@
                     ?>
 
                     <article id="<?= sanitize_title($title); ?>" class="tabcontent<?php if (get_row_index() === 1) echo ' active'; ?>">
-                        <img src="<?= $image; ?>" alt="">
+                        <img src="<?= $image; ?>" alt="image de divers bénévoles">
                         <h4 role="heading" aria-level="4"><?= $title; ?></h4>
                         <p><?= $text; ?></p>
                     </article>
@@ -65,23 +65,13 @@
         <span class="members__title"><?= get_field("services-members-span"); ?></span>
         <h2 role="heading" aria-level="3"><?= get_field("services-members-title"); ?></h2>
         <p><?= get_field("services-members-text"); ?></p>
-        <img src="<?= get_field("services-members-img"); ?>" alt="">
+        <img src="<?= get_field("services-members-img"); ?>" alt="Diverses photos des clowns et bénévoles">
         <a href="<?= get_home_url() . "/volunteers"; ?>" class="cta" title="Vers la page des bénévoles">
             Voir tous les membres
             <span></span>
         </a>
     </section>
-    <section class="callToAction">
-        <h2 role="heading" aria-level="2">Volontaire pour nous soutenir sous forme de don&nbsp;?</h2>
-        <p>
-            N’hésitez pas à nous <a href="<?= get_home_url() . "/contact"; ?>">contacter</a> et à regarder notre
-            <a href="<?= get_home_url() . "/donations"; ?>">page de dons</a> expliquant tout ce que vous devez savoir.
-        </p>
-        <a href="<?= get_home_url() . "/contact"; ?>" class="cta" title="Vers la page de contact">
-            Nous contacter
-            <span></span>
-        </a>
-    </section>
+    <?php get_template_part('otherParts/callToAction'); ?>
 </main>
 <?php endwhile; endif; ?>
 <?= get_footer(); ?>

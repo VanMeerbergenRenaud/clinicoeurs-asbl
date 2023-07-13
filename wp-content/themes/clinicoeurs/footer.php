@@ -19,7 +19,7 @@
                         ?>
                     </ul>
                 </li>
-                <li>
+                <li class="c">
                     <?= get_field('footer-title2', 'option'); ?>
                     <ul class="contributions">
                         <?php if (have_rows('footer-links2', 'option')) {
@@ -79,8 +79,8 @@
                 </div>
                 <div class="dons">
                     <span>Dons</span>
-                    <a href="<?= get_home_url() . "/donations"; ?>" title="Vers la page de dons">
-                        <img src="<?= get_field("footer-bottom-link1", 'option'); ?>" alt="qr-code">
+                    <a href="<?= get_home_url() . "/donations"; ?>" title="Vers la page de dons" target="_blank">
+                        <img src="<?= get_field("footer-bottom-link1", 'option'); ?>" alt="qr-code" target="_blank">
                     </a>
                 </div>
                 <div class="address">
@@ -91,13 +91,13 @@
                 </div>
                 <div class="facebook">
                     <span class="hidden">Facebook</span>
-                    <a href="https://www.facebook.com/clinicoeurs.asbl" title="Vers la page Facebook de l'asbl">
+                    <a href="https://www.facebook.com/clinicoeurs.asbl" title="Vers la page Facebook de l'asbl" target="_blank">
                         <img src="<?= get_field("footer-bottom-link3", 'option'); ?>" alt="logo de Facebook">
                     </a>
                 </div>
             </div>
             <p class="copyright">
-                © 2023 <a href="<?= get_home_url(); ?> " class="cta-border" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Réalisé par Renaud Van Meerbergen.
+                © 2023 <a href="<?= get_home_url() . '/accueil'; ?> " class="cta-border" title="Retourner à l'accueil"><?= get_bloginfo('name'); ?></a>. Réalisé par Renaud Van Meerbergen.
             </p>
             <div class="bg-footer-bottom"></div>
         </nav>

@@ -6,12 +6,12 @@
         <?php if (have_rows('faq-list')) : ?>
             <?php while (have_rows('faq-list')) : the_row(); ?>
                 <li>
-                    <input type="checkbox" name="accordion" id="question-<?php echo get_sub_field('id'); ?>">
-                    <label for="question-<?php echo get_sub_field('id'); ?>">
-                        <?php echo get_sub_field('title'); ?>
+                    <input type="checkbox" name="accordion" id="question-<?= get_sub_field('id'); ?>">
+                    <label for="question-<?= get_sub_field('id'); ?>">
+                        <?= get_sub_field('title'); ?>
                     </label>
                     <p>
-                        <?php echo get_sub_field('text'); ?>
+                        <?= get_sub_field('text'); ?>
                     </p>
                 </li>
             <?php endwhile; ?>

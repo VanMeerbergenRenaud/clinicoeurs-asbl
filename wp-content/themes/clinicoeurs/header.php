@@ -27,6 +27,9 @@
         } elseif (is_404()) {
             $p404 = 404;
             echo "<link rel='stylesheet' type='text/css' href='$stylesheet_uri$p404.css'>";
+        } else {
+            $basic = 'site';
+            echo "<link rel='stylesheet' type='text/css' href='$stylesheet_uri$basic.css'>";
         }
     ?>
 

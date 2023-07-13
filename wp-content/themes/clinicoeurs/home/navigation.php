@@ -18,7 +18,7 @@
                 </li>
             <?php endwhile; endif; ?>
         </ul>
-        <a href="<?= get_home_url(); ?>" class="languages" title="Changer la langue en français">
+        <a href="<?= get_home_url() . '/fr'; ?>" class="languages" title="Changer la langue du site">
             <span class="">fr</span>
         </a>
     </div>

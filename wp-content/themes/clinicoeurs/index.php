@@ -8,7 +8,7 @@
         <?php get_template_part('home/sponsors'); ?>
         <?php get_template_part('home/testimonials'); ?>
         <?php get_template_part('home/faq'); ?>
-        <?php get_template_part('home/contact'); ?>
+        <?php get_template_part('otherParts/contact'); ?>
     </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

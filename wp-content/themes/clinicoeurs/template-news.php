@@ -23,7 +23,7 @@
             if($news->have_posts()): while($news->have_posts()): $news->the_post();
                 ?>
                 <article>
-                    <img src="<?= get_field("img"); ?>" alt="">
+                    <img src="<?= get_field("img"); ?>" alt="photo d'ensemble de l'activité du <?= get_field("date"); ?>">
                     <span><?= get_field("date"); ?></span>
                     <h3 role="heading" aria-level="3"><?= get_field("title"); ?></h3>
                     <a href="<?= get_field("link"); ?>" class="cta-border" title="Vers la page de l'article">
@@ -38,17 +38,7 @@
             <?php endif; ?>
         </div>
     </section>
-    <section class="callToAction">
-        <h2 role="heading" aria-level="2">Volontaire pour nous soutenir sous forme de don&nbsp;?</h2>
-        <p>
-            N’hésitez pas à nous <a href="<?= get_home_url() . "/contact"; ?>">contacter</a> et à regarder notre
-            <a href="<?= get_home_url() . "/donations"; ?>">page de dons</a> expliquant tout ce que vous devez savoir.
-        </p>
-        <a href="<?= get_home_url() . "/contact"; ?>" class="cta" title="Vers la page de contact">
-            Nous contacter
-            <span></span>
-        </a>
-    </section>
+    <?php get_template_part('otherParts/callToAction'); ?>
 </main>
 <?php endwhile; endif; ?>
 <?= get_footer(); ?>

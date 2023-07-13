@@ -9,7 +9,7 @@
         ?>
 
         <?php if ($feedback): ?>
-            <div class="success">x
+            <div class="success">
                 <p><?= get_field('success-message'); ?></p>
             </div>
         <?php else: ?>
@@ -82,7 +82,7 @@
                     <input type="hidden" name="action" value="hepl_contact_form" />
                     <input type="hidden" name="contact_nonce" value="<?= wp_create_nonce('hepl_contact_form'); ?>" />
                     <button type="submit" class="contact__submit">
-                        <span class="left"><img src="<?= get_field('contact-icon'); ?>" alt=""></span>
+                        <span class="left"><img src="<?= get_field('contact-icon'); ?>" alt="icône d'une enveloppe"></span>
                         <span>Envoyer le message</span>
                     </button>
                 </div>
