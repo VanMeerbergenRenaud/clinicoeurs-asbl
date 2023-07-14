@@ -4,6 +4,9 @@ Le site Clinicoeurs est un site de clowns créé dans le cadre d'un travail pour
 ### Maquette de conception & moodboard du site
 Lien : https://xd.adobe.com/view/40050289-ad18-4b26-a971-b73c685e1ed4-1556/?fullscreen
 
+### Temps de réalisation
+27 juin 2022 - 14 julllet 2023
+
 ### Fonctionnalités principales
 - Faire un don : les visiteurs peuvent faire un don à l'ASBL Clinicoeurs directement sur le site.
 - Sponsor & partenaire : les visiteurs peuvent remplir un formulaire pour devenir partenaire de l'ASBL Clinicoeurs.
