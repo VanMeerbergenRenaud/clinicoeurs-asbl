@@ -11,6 +11,7 @@
             <span></span>
         </a>
     </section>
+    <?php get_template_part('otherParts/backToTop.php'); ?>
     <section class="volunteers" aria-label="Présentation des différents bénévoles">
         <span class="volunteers__span"><?= get_field("volunteers-span"); ?></span>
         <h2 role="heading" aria-level="2"><?= get_field("volunteers-title"); ?></h2>

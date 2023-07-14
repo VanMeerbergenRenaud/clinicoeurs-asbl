@@ -11,6 +11,7 @@
             <span></span>
         </a>
     </section>
+    <?php get_template_part('otherParts/backToTop.php'); ?>
     <section class="news">
         <h2 role="heading" aria-level="2"><?= get_field("news-title"); ?></h2>
         <div class="news__articles">

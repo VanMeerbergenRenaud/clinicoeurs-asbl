@@ -7,7 +7,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
+html, body {
+  scroll-behavior: smooth;
   background-color: white;
 }
 
@@ -20,8 +21,7 @@ body {
   max-width: 2000px;
   overflow-x: hidden;
   background-size: cover;
-  background: url("../../img/background/mobile.jpg") no-repeat top center;
-  scroll-behavior: smooth;
+  background: url("../../img/background/mobile-375px.jpg") no-repeat top center;
   text-rendering: optimizeSpeed;
 }
 
@@ -198,9 +198,27 @@ input, textarea {
 /* ----------------------
       Media queries
 ------------------------ */
+@media screen and (min-width: 375px) {
+  body {
+    background: url("../../img/background/mobile-550px.jpg") no-repeat top center;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  body {
+    background: url("../../img/background/tablet-900px.jpg") no-repeat top center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background: url("../../img/background/desktop-1250px.jpg") no-repeat top center;
+  }
+}
+
 @media screen and (min-width: 1250px) {
   body {
-    background: url("../../img/background/desktop.jpg") no-repeat top center;
+    background: url("../../img/background/desktop-1500px.jpg") no-repeat top center;
   }
 
   .none {
@@ -252,8 +270,9 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 1600px) {
   body {
+    background: url("../../img/background/desktop-2000px.jpg") no-repeat top center;
     padding: 0 7.5rem;
   }
 }

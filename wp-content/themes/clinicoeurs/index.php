@@ -2,6 +2,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main>
         <?php get_template_part('home/hero'); ?>
+        <?php get_template_part('otherParts/backToTop.php'); ?>
         <?php get_template_part('home/about'); ?>
         <?php get_template_part('home/volunteers'); ?>
         <?php get_template_part('home/news'); ?>

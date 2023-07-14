@@ -11,6 +11,7 @@
             <span></span>
         </a>
     </section>
+    <?php get_template_part('otherParts/backToTop.php'); ?>
     <section class="services" aria-label="Section des différents services de l'asbl">
         <span class="services__span">Nos services</span>
         <h2 class="services__title" role="heading" aria-level="2">Présentation des différents services de l’ASBL</h2>

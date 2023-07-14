@@ -312,3 +312,13 @@
     }
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .footer {
+    &__bottom {
+      .facebook {
+        margin: 4.5% 0 0 20%;
+      }
+    }
+  }
+}

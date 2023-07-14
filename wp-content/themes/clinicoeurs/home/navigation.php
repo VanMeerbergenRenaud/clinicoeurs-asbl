@@ -19,7 +19,7 @@
             <?php endwhile; endif; ?>
         </ul>
         <a href="<?= get_home_url() . '/fr'; ?>" class="languages" title="Changer la langue du site">
-            <span class="">fr</span>
+            <span class="cta-border">fr</span>
         </a>
     </div>
 </nav>
