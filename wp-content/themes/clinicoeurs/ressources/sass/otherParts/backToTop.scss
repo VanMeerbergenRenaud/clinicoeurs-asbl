@@ -1,0 +1,44 @@
+/* Arrow Scroll Down Desktop */
+
+@import "../other/variables";
+
+.arrow {
+  svg {
+    fill: #F0DB62;
+    height: 2rem;
+    width: 2rem;
+
+    g {
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.arrow:hover {
+  svg {
+
+    circle {
+      fill: #fdfdfc;
+      stroke: #f0db62;
+    }
+
+    path {
+      fill: #f0db62;
+    }
+  }
+}
+
+/* Scroll back to top */
+.top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  transform: rotate(180deg);
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #f0db62;
+  }
+}
