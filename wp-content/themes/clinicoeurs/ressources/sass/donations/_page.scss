@@ -70,6 +70,8 @@
 }
 
 .details {
+  display: grid;
+
   &__span {
     display: block;
     color: $red;
@@ -81,6 +83,7 @@
 
   img {
     margin: 0 auto;
+    max-width: 225px;
   }
 }
 
@@ -161,6 +164,10 @@
 
     h2 {
       margin: 0.75rem auto 3rem;
+    }
+
+    img {
+      max-width: 300px;
     }
   }
 

@@ -20,7 +20,6 @@ body {
   color: black;
   max-width: 2000px;
   overflow-x: hidden;
-  background-size: cover;
   background: url("../../img/background/mobile-375px.jpg") no-repeat top center;
   text-rendering: optimizeSpeed;
 }
@@ -198,25 +197,25 @@ input, textarea {
 /* ----------------------
       Media queries
 ------------------------ */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 425px) {
   body {
     background: url("../../img/background/mobile-550px.jpg") no-repeat top center;
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 725px) {
   body {
     background: url("../../img/background/tablet-900px.jpg") no-repeat top center;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1125px) {
   body {
     background: url("../../img/background/desktop-1250px.jpg") no-repeat top center;
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1350px) {
   body {
     background: url("../../img/background/desktop-1500px.jpg") no-repeat top center;
   }

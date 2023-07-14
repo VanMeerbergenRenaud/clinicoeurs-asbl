@@ -17,6 +17,35 @@
   .cta {
     margin-top: 2em;
   }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.125rem;
+    justify-items: center;
+    align-items: center;
+
+    img {
+      width: 3.625rem;
+      height: 3.625rem;
+      border-radius: 50%;
+    }
+
+    img:first-of-type, img:nth-last-of-type(4) {
+      margin-top: 1.5rem;
+    }
+
+    img:last-of-type, img:nth-last-of-type(3) {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    img:nth-last-of-type(2) {
+      width: 7.25rem;
+      height: 7.25rem;
+      grid-column: 2/4;
+    }
+  }
 }
 
 .partners, .sponsors {
@@ -59,18 +88,45 @@
   }
 
   .volunteers {
+    padding: 5.5em 7.8125em;
+    gap: 0 4rem;
 
     &__span {
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
 
     h2 {
       margin: 1.5rem 0 3rem;
     }
 
-    img {
+    &__gallery {
       grid-row: 1/5;
       grid-column: 1/2;
+      gap: 1.85rem;
+      margin-left: 0.5rem;
+
+      img {
+        width: 6.25rem;
+        height: 6.25rem;
+      }
+
+      img:first-of-type, img:nth-last-of-type(4) {
+        margin-top: 2.85rem;
+      }
+
+      img:last-of-type, img:nth-last-of-type(3) {
+        width: 7.825rem;
+        height: 7.825rem;
+      }
+
+      img:nth-last-of-type(2) {
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+
+      img:hover {
+        scale: 1.05;
+      }
     }
   }
 
@@ -98,6 +154,10 @@
         width: 115px;
         height: 115px;
         border: 1px solid #DEDEDE;
+      }
+
+      img:hover {
+        scale: 1.05;
       }
     }
   }

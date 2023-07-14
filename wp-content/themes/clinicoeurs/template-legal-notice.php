@@ -32,6 +32,7 @@
                 <span></span>
             </a>
         </section>
+        <?php get_template_part('otherParts/backToTop'); ?>
     </main>
 <?php endwhile; endif; ?>
 <?= get_footer(); ?>

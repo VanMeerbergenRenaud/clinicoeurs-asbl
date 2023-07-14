@@ -11,7 +11,7 @@
                 <span></span>
             </a>
         </section>
-        <?php get_template_part('otherParts/backToTop.php'); ?>
+        <?php get_template_part('otherParts/backToTop'); ?>
         <?php if (have_rows('donations')) : ?>
             <?php while (have_rows('donations')) : the_row(); ?>
                 <?php

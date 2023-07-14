@@ -11,11 +11,24 @@
             <span></span>
         </a>
     </section>
-    <?php get_template_part('otherParts/backToTop.php'); ?>
+    <?php get_template_part('otherParts/backToTop'); ?>
     <section class="volunteers" aria-label="Présentation des différents bénévoles">
         <span class="volunteers__span"><?= get_field("volunteers-span"); ?></span>
         <h2 role="heading" aria-level="2"><?= get_field("volunteers-title"); ?></h2>
-        <img src="<?= get_field("volunteers-img"); ?>" alt="Sept photos des principaux bénévoles de l'asbl">
+        <div class="volunteers__gallery">
+            <?php
+            $images = get_field('volunteers-gallery');
+
+            if ($images) {
+                foreach ($images as $image) {
+                    $image_url = $image['url'];
+                    $image_alt = $image['alt'];
+
+                    echo '<img src="' . $image_url . '" alt="' . $image_alt . '">';
+                }
+            }
+            ?>
+        </div>
         <a href="<?= get_home_url() . "/contact"; ?>" class="cta" title="Vers la page de contact">
             Devenir bénévole
             <span></span>
