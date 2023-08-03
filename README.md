@@ -4,6 +4,8 @@ Le site Clinicoeurs est un site de clowns créé dans le cadre d'un travail pour
 ### Maquette de conception & moodboard du site
 Lien : https://renaud-vmb.com/projets/clinicoeurs
 
+Contenu et texte sur Notion : https://renaud-vmb-notes.notion.site/Clown-Project-486e4a1c3fa0424fb61e8e85e6b70b2a?pvs=4
+
 ### Temps de réalisation
 27 juin 2023 - 14 juilllet 2023
 
